@@ -1,0 +1,647 @@
+/* CSS Swann */
+
+/* footer */
+
+.block-footer{
+	height: 10vh;
+	display: flex;
+}
+
+.block-footer .info1 {
+    color: white;
+	font-size: 2em;
+    text-align: center;
+	display: flex;
+	margin: auto;
+}
+
+.block-footer .info2 {
+    color: white;
+	font-size: 2em;
+    text-align: center;
+	display: flex;
+	margin: auto;
+}
+
+.block-footer .info3 {
+    color: white;
+	font-size: 2em;
+    text-align: center;
+	display: flex;
+	margin: auto;
+}
+
+/*Page de connection*/
+
+.logo1cl{
+	height: 500px ;
+	display: flex;
+	margin: auto;
+	margin-top: -150px;
+}
+
+.logo2cl{
+	height: 200px;
+	display: flex;
+	margin: auto;
+}
+	
+
+
+.page_p_1{
+	background: url(../ressource/image/ForumDesMétiersLM181117.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 27%;
+	height: 101vh;
+}
+
+
+
+.btn.btn-primary{
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	font-size: 41px;
+	border-radius: 50px;
+	margin: auto;
+	display: flex;
+	margin: auto;
+	margin-top: 80px;
+	text-transform: none;
+	padding: 30px;
+}
+
+.lignehorizontale{
+	margin-top: 70px;
+}
+
+.form-group .form-control {
+	background-color: #CECECE;
+	color: black;
+	height: 80px;
+	Width: 550px;
+	font-size: 45px;
+	border-radius: 100px;
+	margin: auto;
+	display: flex;
+	margin: auto;
+	margin-top: 70px;
+	border: none;
+	padding: 15px;
+}
+ 
+.inscription{
+	color: white;
+}
+
+
+ .form-group1 .form-control {
+	background-color: #CECECE;
+	color: black;
+	height: 80px;
+	Width: 550px;
+	font-size: 45px;
+	border-radius: 100px;
+	margin: auto;
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	border: none;
+	padding: 15px;
+}
+ 
+
+
+.form-check {
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 50px;
+	margin-left: 90px;
+}
+
+
+.btn.btn-connection {
+	display: flex;
+	font-size: 55px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 50px;
+	background: none;
+	border: none;
+}
+.btn.btn-connection:hover{
+	font-size: 65px;
+}
+
+.form-check-label {
+	display: flex;
+}
+
+.form-check-input {
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	margin-left: 40px;
+}
+
+
+
+
+.pasencoremembre a{
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.inscrire a{
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: auto;
+	margin-top: 150px;
+	margin-left: 10px;
+}
+
+
+.inner1{
+	margin: auto;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.container1{
+	height: 90vh;
+	width: 100%;
+	display: flex;
+}
+
+.remember{
+	display:flex;
+}
+
+.group{
+	display: flex;
+}
+
+/* Page je commence 20/12/17 */
+
+.logo_commencer{
+	height: 500px ;
+	display: flex;
+	margin: auto;
+	margin-top: -150px;
+}
+
+.logo_com{
+	height: 500px;
+	width: 500px; 
+	margin: auto;
+}
+
+.commencer_le_form{
+	background: url(../ressource/image/Page2BK.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 130vh;
+	
+}
+
+.slogan_commencer{
+	display: flex;
+	font-size: 60px;
+	color: #00cccb;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.button_commencer_form{
+	display: flex;
+	font-size: 120px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 400px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.button_commencer_form:hover{
+	color: #515050;
+	background: #00CCCB;
+	border-color: #515050;
+}
+
+.button_commencer_form a {
+	text-decoration: none;
+}
+
+/*Page je commence*/
+
+.logo1_2{
+	height: 500px ;
+	display: flex;
+	margin: auto;
+	margin-top: -150px;
+}
+	
+
+.page2{
+	background: url(../projetsemestre/ressource/image/Page2BK.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 101vh;
+}
+
+.titre_sl{
+	font-size: 60px;
+	color: #00cccb;
+	font: Arial;
+}
+
+.slogancl {
+	display: flex;
+	font-size: 32px;
+	color: #00cccb;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.btn.btn-connection_2 {
+	display: flex;
+	font-size: 120px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 400px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.msgerreur{
+	font-size: 100px;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 500px;
+}
+
+.msgerreur1{
+	font-size: 100px;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 500px;
+}
+
+.inner1 a{
+	text-decoration: none;
+}
+
+/* Page de formulaire */
+
+.page3{
+	background: url(../ressource/image/imagefondpage3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 36%;
+	height: 101vh;
+}
+
+.question1{
+	display: flex;
+}
+
+.q1{
+	display: flex;
+	font-size: 90px;
+	color: #00cccb;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.question-ecrite{
+	display: flex;
+}
+
+.question-ecrite .question-form{
+	display: flex;
+	font-size: 50px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+
+.reponsel1{
+	display: flex;
+	margin-top: 80px;
+	flex-wrap: wrap;
+	font-size: 30px;
+	font-family: Arial;
+	color:white;
+}
+
+.ligne{
+	margin: auto;
+	margin-top: 40px;
+}
+
+.form_check_input{
+	width: .8em;
+	height: .8em;
+    font-size: 1.5em;
+	position: relative;
+}
+
+
+.block-reponse{
+	display: inline-block;
+}
+
+.btn.btn-connection_p_3{
+	display: flex;
+	font-size: 60px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.btn-suivant .btn-connection_p_3:hover {
+	display: flex;
+	font-size: 60px;
+	font-weight: bold;
+	color: #515050;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #00cccb;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+}
+	
+
+
+
+/* Page de formulaire 2*/
+
+.btn.btn-connection_p_4_1{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB;
+	float: left;
+	margin-left: 225px;
+}
+
+.btn.btn-connection_p_4_1:hover{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #515050;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #00cccb;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+	float: left;
+	margin-left: 225px;
+}
+
+.btn.btn-connection_p_4_2{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB;
+	float: right;
+	margin-right: 225px;
+}
+
+.btn.btn-connection_p_4_2:hover{
+	font-size: 50px;
+}
+
+.btn.btn-connection_p_4_2:hover{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #515050;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #00cccb;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+	float: right;
+	margin-right: 225px;
+}
+
+
+/* Page de formulaire 3*/
+
+.btn.btn-connection_p_5_1{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB;
+	float: left;
+	margin-left: 225px;
+}
+.btn.btn-connection_p_5_1:hover{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #515050;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #00cccb;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+	float: left;
+	margin-left: 225px;
+}
+
+.btn.btn-connection_p_5_2{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #515050;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #00CCCB;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+	float: right;
+	margin-right: 190px;
+}
+.btn.btn-connection_p_5_2:hover{
+	display: flex;
+	font-size: 35px;
+	font-weight: bold;
+	color: #00cccb;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00cccb;
+	float: right;
+	margin-right: 190px;
+}
+
+/* CSS Alexandre */
+
+
+/* PAGE INSCRIPTION */
+
+.block-main {
+	height:90vh;
+}
+.body_inscription {
+	background:url(../ressource/image/fond_page_inscription.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container_inscription {
+	margin-top: 150px;
+}
+.body_inscription .inner {
+	background:rgba(39,39,40,0.7);
+	width:95%;
+	padding-top: 50px;
+	margin: auto;
+	
+}
+
+.logos_inscription .logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+}
+
+.logos_inscription h1 {
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	font-family: Arial;
+	margin-bottom: 10px;
+}
+
+.formulaire {
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	
+}
+
+.formulaire .nom_prenom {
+	display:flex;
+	text-align: center;
+	margin: auto;
+}
+
+.formulaire #firstname {
+	margin-left: 75px;
+	margin-right: 10px;
+}
+
+.form {
+	width: 350px;
+	height:60px;
+	font-size: 30px;
+	background-color:rgba(39,39,40,0.7);
+	text-decoration-color: white;
+	color: white;
+	border-radius: 30px;
+	padding-left:20px;
+	border: 3px solid white;
+	margin: 10px;
+}
+
+.bouton_inscrire {
+	margin: 40px;
+	width: 450px;
+	height:70px;
+	font-size: 45px;
+	background-color: #00cccb;
+	color: white;
+	border-radius: 50px;
+}
