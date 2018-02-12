@@ -8,9 +8,9 @@
 
 <body>
 <header>
-<?php 
-	include'1header.php'
-?>
+
+	<?php include 'include/1header.php' ?>
+
 </header>
 	
 	<div class="block-center">

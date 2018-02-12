@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>header</title>
-	<script src="../javascript/jquery.min.js">
+	<script src="javascript/jquery.min.js">
 	</script>
-	<script type="text/javascript" src="../javascript/source.js">
+	<script type="text/javascript" src="javascript/source.js">
 	</script>
-	<link rel="stylesheet" href="../../css/header_style.css" media ="all">
+	<link rel="stylesheet" href="css/header_style.css" media ="all">
 
 </head>
 
@@ -18,7 +18,7 @@
 		<div class="inner">
 		<div class="nav-item">
 			<div class="logos">
-				<img class="logo" src="../../ressource/image/logo.png" alt="logo">
+				<img class="logo" src="../../images/logo.png" alt="logo">
 				<img class="slogan" src="../../ressource/image/logo2.png" alt="slogan">
 			</div>
 		</div>
