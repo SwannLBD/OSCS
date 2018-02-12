@@ -49,7 +49,7 @@
 
 
 .page_p_1{
-	background: url(../ressource/image/ForumDesMétiersLM181117.jpeg);
+	background: url(../../ressource/image/ForumDesMétiersLM181117.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 27%;
@@ -212,7 +212,7 @@
 }
 
 .commencer_le_form{
-	background: url(../ressource/image/Page2BK.png);
+	background: url(../../ressource/image/Page2BK.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
@@ -266,7 +266,7 @@
 	
 
 .page2{
-	background: url(../projetsemestre/ressource/image/Page2BK.png);
+	background: url(../../projetsemestre/ressource/image/Page2BK.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
@@ -325,7 +325,7 @@
 /* Page de formulaire */
 
 .page3{
-	background: url(../ressource/image/imagefondpage3.jpg);
+	background: url(../../ressource/image/imagefondpage3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 36%;
@@ -573,7 +573,7 @@
 	height:90vh;
 }
 .body_inscription {
-	background:url(../ressource/image/fond_page_inscription.jpg);
+	background:url(../../ressource/image/fond_page_inscription.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
