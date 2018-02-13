@@ -3,11 +3,14 @@
 /* footer */
 
 .block-footer{
-	height: 10vh;
 	display: flex;
+
 }
 
-.block-footer .info1 {
+.block-footer .inner {
+	display: flex;
+}
+.block-footer p{
     color: white;
 	font-size: 2em;
     text-align: center;
@@ -15,21 +18,6 @@
 	margin: auto;
 }
 
-.block-footer .info2 {
-    color: white;
-	font-size: 2em;
-    text-align: center;
-	display: flex;
-	margin: auto;
-}
-
-.block-footer .info3 {
-    color: white;
-	font-size: 2em;
-    text-align: center;
-	display: flex;
-	margin: auto;
-}
 
 /*Page de connection*/
 
@@ -266,7 +254,7 @@
 	
 
 .page2{
-	background: url(../../projetsemestre/ressource/image/Page2BK.png);
+	background: url(../../ressource/image/Page2BK.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
@@ -569,9 +557,7 @@
 
 /* PAGE INSCRIPTION */
 
-.block-main {
-	height:90vh;
-}
+
 .body_inscription {
 	background:url(../../ressource/image/fond_page_inscription.jpg);
 	background-size: cover;
@@ -605,17 +591,17 @@
 }
 
 .formulaire {
+	padding-left: 200px;
 	display: block;
-	text-align: center;
-	padding-bottom: 20px;
+	text-align:left;
+	padding-bottom: 100px;
 	margin-top: 50px;
 	
 }
 
-.formulaire .nom_prenom {
-	display:flex;
-	text-align: center;
-	margin: auto;
+.block-main .formulaire .nom_prenom {
+	display: flex;
+	
 }
 
 .formulaire #firstname {
