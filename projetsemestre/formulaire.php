@@ -17,7 +17,7 @@
 	
 	// connection au serveur 
 	
-	$link = mysqli_connect("localhost", "root", "root", "formulaire");
+	$link = mysqli_connect("localhost", "root", "", "formulaire");
 
 if (!$link) { // Si le lien entre la connexion et la base de donnée, un affichage des erreurs apparait 
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
