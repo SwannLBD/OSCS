@@ -1,100 +1,103 @@
 @charset "utf-8";
 /* CSS Document */
 
-.fond {
+/* PAGE RESULTATS */
+.block-center .fond {
 	background: url(../../ressource/image/imagefondpage3.jpg);
 	background-size: cover;
 	height:100px;
 }
 
-.choose {
+.block-center .choose {
 	margin-left: auto;
 	margin-right: auto;
 	height:100%;
 	display: flex;
 }
 
-a {
+.block-center a {
 	color: white;
 	font-size: 35px;
 	text-decoration: none;
 }
 
-span {
+.block-center span {
 	margin: auto;
 }
 
-h1 {
+.block-center h1 {
 	text-align: center;
 	color: black;
 	font-size: 30px;
 }
 
-h2 {
+.block-center h2 {
 	font-size: 20px;
 	color:black;
 }
 
-p {
+.block-center p {
 	color: black;
 	font-size: 10px;
 }
 
-.article {
+.block-center .article {
 	border: 1px solid black;	
 	margin: 10px;
 }
 
-.presentation {
+.block-center .presentation {
 	display:flex;
 }
 
-.photo_article {
+.block-center .photo_article {
 	height: 80px;
 	margin: auto;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.lien_article {
+.block-center .lien_article {
 	display: flex;
 }
 
-.note_article {
+.block-center .note_article {
 	width:33%;
 	margin-left: 10px;
 }
 
-.adresse_article{
-	display: flex;
-	width:33%;
-	margin-left: 10px;
-}
-
-.horaire_article{
+.block-center .adresse_article{
 	display: flex;
 	width:33%;
 	margin-left: 10px;
 }
 
-.infos {
+.block-center .horaire_article{
+	display: flex;
+	width:33%;
+	margin-left: 10px;
+}
+
+.block-center .infos {
 	margin-left:25px;
 	margin: 0;
 	vertical-align: super;
 }
 
-.adresse_article #adresse {
+.block-center .adresse_article #adresse {
 	vertical-align: baseline;
 	width: 20px;
 	height:20px;
 	margin: auto 0;
 }
 
-.horaire_article #horaire {
+.block-center .horaire_article #horaire {
 	vertical-align: baseline;
 	width:20px;
 	height:20px;
 }
+
+/* FIN PAGE RESULTATS */
 
 /* Footer */
 .block-footer{
@@ -108,7 +111,7 @@ p {
 }
 
 .block-footer .info1 {
-    color: white;
+    color: black;
 	font-size: 2em;
     text-align: center;
 	display: flex;
@@ -117,7 +120,7 @@ p {
 
 
 .block-footer .info2 {
-    color: white;
+    color: black;
 	font-size: 2em;
     text-align: center;
 	display: flex;
@@ -126,14 +129,61 @@ p {
 
 .block-footer .info3 {
 
-    color: white;
+    color: black;
 	font-size: 2em;
     text-align: center;
 	display: flex;
 	margin: auto;
 }
 
+/* FIN FOOTER*/
+
+/* PAGE DESCRIPTIF SOIREE */
+
+
+.block-body .fond {
+	background: url(../../ressource/image/imagefondpage3.jpg);
+	background-size: cover;
+	height:100px;
+	display: flex;
+}
+
+.block-body span {
+	margin: auto;
+	color: white;
+	font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN PAGE DESCRIPTIF SOIREE */
+
+/* PARTIE RESPONSIVE */
+
+
 @media (min-width: 992px){
+	
+	/* PAGE RESULTATS */
+	.block-center  .article {
+		width: 900px;
+		margin: 20px auto;
+	}
+	
+	/* FIN PAGE RESULTATS */
 	
 	
 }
