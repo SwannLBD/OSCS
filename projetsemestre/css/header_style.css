@@ -175,7 +175,7 @@ body {
 	
 } /* Fin partie tablette */
 
-@media (min-width:1024px){ /* Partie ordinateur*/
+@media (min-width:992px){ /* Partie ordinateur*/
 	
 	.block-header .logos {
 		display: flex;
@@ -201,15 +201,6 @@ body {
 	}
 	
 	.block-header .menu_cache {
-		margin-left: 62%;
-	
-	}
-	
-}
- 
-@media (min-width:1440px){
-	
-	.block-header .menu_cache {
 		margin-right: 0px;
 		margin-left: 70%;
 	}
@@ -218,12 +209,17 @@ body {
 		padding-right: 45px;
 		
 	}
-}
-
-@media (min-width:1920px){
 	
-	#liste_2 {
-		padding-right: 93px;
+	.block-header .nom_cache {
+		display: flex;
+		margin-right: 20px;
+	}
+	
+	.block-header .nom_prenom {
+		font-size: 16px;
+		color: white;
+		margin-right: 7px;
 	}
 }
+	
 	/* Fin partie ordinateur */
