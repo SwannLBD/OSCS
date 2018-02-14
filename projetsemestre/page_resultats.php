@@ -12,7 +12,6 @@
 	<?php include 'include/1header.php' ?>
 
 </header>
-	
 	<div class="block-center">
 		<div class="fond">
 			<a href="je_commence.php" class="choose"><span>Choisis ta soirée</span></a>
@@ -39,14 +38,14 @@
 		</div>
 		<div class="lien_article">
 			<div class="note_article">
-				<img class="infos" src="../images/etoiles.png" alt="etoiles">
+				<img class="infos" src="images/etoiles.png" alt="etoiles">
 			</div>
 			<div class="adresse_article">
-				<img class="infos" id="adresse" src="../images/placeholder.svg" alt="icone_placeholder">
+				<img class="infos" id="adresse" src="images/placeholder.svg" alt="icone_placeholder">
 				<p class="infos">10 route de chemellier</p>
 			</div>
 			<div class="horaire_article">
-				<img class="infos" id="horaire" src="../images/calendar.svg" alt="icone_horaire">
+				<img class="infos" id="horaire" src="images/calendar.svg" alt="icone_horaire">
 				<p class="infos">10h-15h</p>
 			</div>
 		</div>
@@ -66,29 +65,21 @@
 		</div>
 		<div class="lien_article">
 			<div class="note_article">
-				<img class="infos" src="../images/etoiles.png" alt="etoiles">
+				<img class="infos" src="images/etoiles.png" alt="etoiles">
 			</div>
 			<div class="adresse_article">
-				<img class="infos" id="adresse" src="../images/placeholder.svg" alt="icone_placeholder">
+				<img class="infos" id="adresse" src="images/placeholder.svg" alt="icone_placeholder">
 				<p class="infos">10 route de chemellier</p>
 			</div>
 			<div class="horaire_article">
-				<img class="infos" id="horaire" src="../images/calendar.svg" alt="icone_horaire">
+				<img class="infos" id="horaire" src="images/calendar.svg" alt="icone_horaire">
 				<p class="infos">10h-15h</p>
 			</div>
 		</div>
 	</div>
 	
-	<footer class="block-footer">
-		<div class="info1">
-			<p>Mentions légales</p>
-		</div>
-		<div class="info2">
-			<p>Politique de confidentialité</p>
-		</div>	
-		<div class="info3">
-			<p>Conditions générales</p> 
-		</div>
-</footer>
+	<?php
+	include "include/footer.php";
+	?>
 </body>
 </html>
