@@ -1,23 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Footer</title>
-	<link rel="stylesheet" href="../bootstrap-4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style.css">
-</head>
-
-<body>
-
-  <footer class="block-footer">
-    <div class="inner">
-
-		<p class= "col-2">Mentions légales</p>
-		<p class= "col-6">Politique de confidentialité</p>
-		<p class= "col-2">Conditions générales</p>
-
-    </div>
-  </footer>
-
-</body>
-</html>
+<footer class="block-footer">
+		<div class="info1">
+			<p>Mentions légales</p>
+		</div>
+		<div class="info2">
+			<p>Politique de confidentialité</p>
+		</div>	
+		<div class="info3">
+			<p>Conditions générales</p> 
+		</div>
+</footer>

@@ -11,43 +11,42 @@
 <main class="block-main">
 	<div class="container_inscription">
 	<div class="inner">
-	<div class="logos_inscription">
-		<img class="logo" src="../ressource/image/logo.png" alt="logo">
-		<h1> Inscription </h1>
-		<hr class="souligne" color="white" width="60%" align ="center">
-	</div>
-	<div class="formulaire">
-		<form action="formulaire.php" method="post">    <!-- method "post"(+sure) ou "get"(-sure) -->
-			<div class="nom_prenom">
-			<p>
-				<input type="text" required name="firstname" class="form" id="firstname" placeholder="Prénom" maxlength="15">
-			</p>
-			<p>
-				<input type="text" required name="lastname" id="lastname" class="form"placeholder="Nom" maxlength="15">
-			</p>
-			</div>
-			<p>
-				<input type="email" required name="email" class="form" id="email" placeholder="e-mail" max-length="40">
-			</p>
-			<p>
-				<input type="password" required name="password" class="form" id="password" placeholder="mot de passe" maxlength="15" >
-			</p>
-			<button type="submit" class="bouton_inscrire"> S'inscrire </button>
-		</form>
-	</div>
+		<div class="logos_inscription">
+			<img class="logo" src="../ressource/image/logo.png" alt="logo">
+			<h1> Inscription </h1>
+			<hr class="souligne" color="white" width="25%" align ="center">
+		</div>
+		<div class="formulaire">
+			<form action="formulaire.php" id="form" method="post">    <!-- method "post"(+sure) ou "get"(-sure) -->
+				<div class="nom_prenom">
+				<p>
+					<input type="text" required name="firstname" class="form" id="firstname" placeholder="Prénom" maxlength="15">
+				</p>
+				<p>
+					<input type="text" required name="lastname" id="lastname" class="form"placeholder="Nom" maxlength="15">
+				</p>
+				</div>
+				<div class="mail_password">
+				<p>
+					<input type="email" required name="email" class="form" id="email" placeholder="e-mail" max-length="40">
+				</p>
+				<p>
+					<input type="password" required name="password" class="form" id="password" placeholder="mot de passe" maxlength="15" >
+				</p>
+				</div>
+				<div class="btn_inscript">
+					<button type="submit" class="bouton_inscrire"> S'inscrire </button>
+				</div>
+			</form>
+		</div>
 	</div>
 	</div>	
 </main>
-<footer class="block-footer">
-					<div class="info1">
-						<p>Mentions légales</p>
-					</div>
-					<div class="info2">
-						<p>Politique de confidentialité</p>
-					</div>	
-					<div class="info3">
-						<p>Conditions générales</p> 
-					</div>
-</footer>	
+<!-- FOOTER -->
+<?php	
+	include "include/footer.php";
+?>	
 </body>
+
+
 </html>
