@@ -49,9 +49,9 @@
 				<hr class="trait" width="100%" align ="center">
 					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
 					<li class="list">Mon compte</li>
-					<li class="list">Se déconnecter</li>
+					<li class="list"> <a href="deco.php">Déconnexion</a></li>
 				</ul>
-			</ul>	
+			</ul>
 		</div>
 		<!-- Menu déroulant caché -->
 		<ul id="liste_2">
