@@ -36,13 +36,12 @@
 		</div>
 		<div class="avis">
 			<div>
-				<p> Trop bien !</p>
+				<h3> Avis </h3>
+				<p="commentaire"> Trop bien !</p>
 			</div>
 		</div>
 		<div class="partie_map">
-			<div class="map">
 				<?php include 'include/map.php'?>
-			</div>
 		</div>
 	</div>
 </div>
