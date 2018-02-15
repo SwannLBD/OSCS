@@ -16,17 +16,32 @@
 		<span>Bar n°1</span>
 	</div>
 	<div class="soiree">
-		<div class="box_image">
-			<img src="images_bdd/Bars/LaTrinquette.jpeg">
+		<div class="partie_description">
+			<div class="box_image">
+				<div class="image_soiree">
+					<img src="images_bdd/Bars/LaTrinquette.jpeg" class="image">
+				</div>
+			</div>
+			<div class="box_decription_soiree">
+				<div class="description">
+					<p class="texte"> La cave de la Trinquette à Angers est la meilleure du monde </p>
+				</div>
+				<div class="adresse">
+				 10 route de chemellier
+				</div>
+				<div class="etoiles">
+				 <img src="images_site/etoiles.png">
+				</div>
+			</div>	
 		</div>
-		<div class="box_decription_soiree">
-			<div class="description">
+		<div class="avis">
+			<div>
+				<p> Trop bien !</p>
 			</div>
-			<div class="adresse">
-			</div>
-			<div class="etoiles">
-			</div>
-			<div class="avis">
+		</div>
+		<div class="partie_map">
+			<div class="map">
+				<?php include 'include/map.php'?>
 			</div>
 		</div>
 	</div>
