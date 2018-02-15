@@ -10,7 +10,7 @@
 
 	//pour ajoutez une ligne
 	$queryAjout = "INSERT INTO bar (nomBar, adresseBar, horraireOuvBar, horraireFermBar, noteBar, avisBar, descBar, photoBar)
-	VALUES('Le Ti bar', '45 Rue du Mail, 49100 Angers', '18h15', '02h00', '4/5', 'Très bon bar où l'ambiance est sympa et les shooters sont variés et originaux.', 'Shooters', 'bite')";
+	VALUES('Le Ti bar', '45 Rue du Mail, 49100 Angers', '18h15', '02h00', '4', 'Très bon bar où l'ambiance est sympa et les shooters sont variés et originaux.', 'Shooters', 'bite')";
 	$nbModif = $connexion-> exec($queryAjout);
 	echo "<p> Le nombre de modifications est de $nbModif </p>";
 

@@ -87,7 +87,7 @@
 	border: none;
 	padding: 15px;
 }
- 
+
 .inscription{
 	color: white;
 }
@@ -106,7 +106,7 @@
 	border: none;
 	padding: 15px;
 }
- 
+
 
 
 .form-check {
@@ -200,15 +200,15 @@
 	background-size: 350%;
 	background-position: 50%;
 	height: 100%;
-}	
-	
+}
+
 .logo_commencer{
 	display: flex;
 	margin: auto;
 }
 
 .logo_com{
-	height: 280px; 
+	height: 280px;
 	margin: auto;
 	margin-bottom: 20px;
 }
@@ -256,7 +256,7 @@
 	margin: auto;
 	margin-top: -150px;
 }
-	
+
 
 .page2{
 	background: url(../../ressource/image/Page2BK.png);
@@ -411,7 +411,7 @@
 	border: groove;
 	border-color: #515050;
 }
-	
+
 
 
 
@@ -626,7 +626,7 @@
 }
 
 .body_inscription p {
-	display: flex;	
+	display: flex;
 }
 
 .body_inscription p input {
@@ -635,7 +635,7 @@
 
 .block-main .formulaire .nom_prenom {
 	display: block;
-	
+
 }
 
 .block-main .formulaire .mail_password {
@@ -660,53 +660,53 @@
 /* PARTIE RESPONSIVE */
 
 @media (min-width: 992px){
-	
+
 	/* Footer */
-	
+
 	.block-footer {
 		font-size: 10px;
 	}
-	
+
 	/* Fin Footer */
-	
+
 	/* Page Inscription */
-	
+
 	.container_inscription {
 	margin-top: 30px;
 	}
-	
+
 	.body_inscription .inner {
 	height: 720px;
 	width:56%;
 	}
-	
+
 	.logos_inscription .logo {
 		height: 150px;
 	}
-	
+
 	.logos_inscription h1 {
 	text-align: center;
 	font-size: 40px;
 	font-weight: 600;
 	}
-	
+
 	.form {
-	width: 320px;	
+	width: 320px;
 	font-size: 25px;
 	}
-	
+
 	.body_inscription p input {
 		height: 40px;
 		margin: 0 10px;
 	}
-	
+
 	.bouton_inscrire {
 	width: 250px;
 	height: 50px;
 	font-size: 25px;
 	border-radius: 20px;
 	}
-	
+
 	.block-main .formulaire .nom_prenom {
 	display: flex;
 	}
@@ -719,68 +719,68 @@
 	margin-top: 40px;
 	display: flex;
 	}
-	
+
 	/* Fin Page Inscription */
 
-	
-	/* Page Formulaire */	
-	
+
+	/* Page Formulaire */
+
 	.page3 {
 		height: 100%;
 	}
 	.page3 .question1 .q1 {
 		font-size: 50px;
 		margin-top: 10px;
-	}	
-	
+	}
+
 	.question-ecrite .question-form {
 		font-size: 35px;
 	}
-	
+
 	.reponsel1 {
 		display: block;
 	}
-	
+
 	.btn.btn-connection_p_3 {
 		font-size: 20px;
 		padding: 15px 60px;
 		border-radius: 25px;
 	}
-	
+
 	.btn-suivant .btn-connection_p_3:hover {
 		font-size: 20px;
 		padding: 15px 60px;
 		border-radius: 25px;
 	}
-	
+
 	/* Fin Page Formulaire */
-	
+
 	/* Page Commencer_formulaire */
-	
+
 	.commencer_le_form{
 		background-size: cover;
 	}
-	
+
 	.commencer_le_form .logo_com {
 		height: 220px;
 	}
-	
+
 	.commencer_le_form .slogan_commencer {
 		font-size: 40px;
 	}
-	
+
 	.commencer_le_form .button_commencer_form {
 		font-size: 25px;
 	}
-	
+
 	/* Fin Page Commencer_formulaire*/
-	
+
 	/* Page de Formulaire */
-	
+
 	.page3 .ligne input:last-of-type{
 		margin-left: 100px;
 	}
-	
+
 	/* Fin Page de Formulaire */
-	
+
 }
