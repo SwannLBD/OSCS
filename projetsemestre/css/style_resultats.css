@@ -137,6 +137,9 @@
 
 /* PAGE DESCRIPTIF SOIREE */
 
+.block-body {
+	font-family: "Segoe UI";
+}
 
 .block-body .fond {
 	background: url(../images_site/imagefondpage3.jpg);
@@ -172,10 +175,13 @@
 }
 
 .block-body  .soiree .avis {
+	height: 71px;
 	margin: 5px 0px;
 }
 
-
+.block-body .avis h3 {
+	margin: 2px 0;
+}
 
 
 

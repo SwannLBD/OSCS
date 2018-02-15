@@ -1,5 +1,5 @@
 <?php
-	session_start();	//Création d'une session
+	/session_start();	//Création d'une session
 
 	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
 			or die ('could not connect to database');  // Accès a la base de donnée sinon afficher l'echec de connexion
@@ -36,5 +36,16 @@
 		echo('<p class="error">Error</p>');
 	}
 	mysqli_close($base_donnee);
-	   }
+} */
+
+
+
+
+
+
+
+
+
+
+
 ?>

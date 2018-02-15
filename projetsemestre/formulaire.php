@@ -1,46 +1,54 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Document sans titre</title>
-</head>
+<?php
+	/*CONNEXION*/
+require 'include/pdo/pdo.php';
 
-<body>
-	<?php
 
-	// On récupère les POST pour en faire des variables
 
-	$prenom = $_POST['firstname'];
-	$nom = $_POST['lastname'];
-	$mail = $_POST['email'];
-	$password = $_POST['password'];
+//On initialise des erreurs
+$errors = [];
 
-	// connection au serveur
-
-	$link = mysqli_connect("localhost", "root", "root", "formulaire");
-
-if (!$link) { // Si le lien entre la connexion et la base de donnée, un affichage des erreurs apparait
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
+/*CONDITIONS*/
+//Si le nomUser est vide
+if(empty($_POST['lastname'])) {
+    $errors['lastname'] = "votre nom n'est pas valide (Alphanumérique)";
 }
 
-/* echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
-echo"</p>";*/
-
-$sql2 = "INSERT INTO membres (nomMembre, prenomMembre, emailMembre, passwordMembre)
-VALUES ('" .$nom ."', '" .$prenom ."', '" .$mail ."', '" .$password ."')"; /* On lie la base de donnée avec les variables pour récupérer les valeurs et ainsi créer la base de donnée */
-
-/*echo ('Query SQL = ' . $sql2);*/
-
-if (mysqli_query($link, $sql2)) {
-	 header ('Location: commencerformulaire.php'); // Si l'inscription à bien été faite, on redirige vers la page commencerformulaire
-}else {
-	echo "Error: " . $sql2 . "<br>" . mysqli_error($link); // Si il y a des erreurs, la page affiche un message d'erreur
-	// A compléter pour afficher si il y a des oublis ou des erreurs
+//Si le prenomUser est vide, possiblité de rajouté des paramètres pour plus de précision
+if(empty($_POST['firstname'])) {
+    $errors['firstname'] = "votre prénom n'est pas valide (Alphanumérique)";
 }
-	?>
-</body>
-</html>
+
+//Si l'adresse mail est vide,  possiblité de rajouté des paramètres pour plus de précision
+if(empty($_POST['email'])) {
+    $errors['email'] = "Votre email n'est pas valide";
+}
+//Si le mot de passe est vide ou différent l'un à l'autre
+if(empty($_POST['password'])) {
+    $errors['password'] = "Vous devez rentrer un mot de passe valide";
+}
+
+
+
+//Si aucune erreur n'et detecté
+if(empty($errors)){
+
+	$stmt = $connexion->prepare('INSERT INTO membres (nomMembre, prenomMembre, emailMembre, passwordMembre)
+	VALUES (:nomMembre, :prenomMembre, :emailMembre, :passwordMembre )');
+	$stmt->bindValue(':nomMembre', $_POST['lastname']);
+	$stmt->bindValue(':prenomMembre', $_POST['firstname']);
+	$stmt->bindValue(':emailMembre', $_POST['email']);
+	$stmt->bindValue(':passwordMembre', $_POST['password']);
+	$stmt->execute();
+
+	header('Location: commencerformulaire.php');
+
+}
+//Si au moins une erreurs est detecté ont affiche les erreurs
+else{
+
+    echo "<pre>";
+    print_r($errors);
+    echo "</pre>";
+}
+
+?>

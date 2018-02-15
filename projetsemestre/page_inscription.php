@@ -7,7 +7,7 @@
 </head>
 
 <body class="body_inscription">
-	
+
 <main class="block-main">
 	<div class="container_inscription">
 	<div class="inner">
@@ -20,10 +20,10 @@
 			<form action="formulaire.php" id="form" method="post">    <!-- method "post"(+sure) ou "get"(-sure) -->
 				<div class="nom_prenom">
 				<p>
-					<input type="text" required name="firstname" class="form" id="firstname" placeholder="Prénom" maxlength="15">
+					<input type="text" required name="lastname" id="lastname" class="form" placeholder="Nom" maxlength="15">
 				</p>
 				<p>
-					<input type="text" required name="lastname" id="lastname" class="form"placeholder="Nom" maxlength="15">
+					<input type="text" required name="firstname" class="form" id="firstname" placeholder="Prénom" maxlength="15">
 				</p>
 				</div>
 				<div class="mail_password">
@@ -40,12 +40,12 @@
 			</form>
 		</div>
 	</div>
-	</div>	
+	</div>
 </main>
 <!-- FOOTER -->
-<?php	
+<?php
 	include "include/footer.php";
-?>	
+?>
 </body>
 
 
