@@ -4,7 +4,7 @@
 
 	//pour ajoutez une ligne
 	/*$queryAjout = "INSERT INTO bar (ID_bar, nomBar, adresseBar, horraireOuvBar, horraireFermBar, noteBar, avisBar, descBar,photoBar)
-  VALUES('1', 'La cave de la Trinquette', '21 Boulevard Carnot, 49100 Angers', '17h', '21h', '5/5', 'Superbe ambiance, Jadore le concepte familiale de la trinquette.', 'Cave', '')";
+  VALUES('1', 'La cave de la Trinquette', '21 Boulevard Carnot, 49100 Angers', '17h', '21h', '5/5', 'Superbe ambiance, Jadore le concepte familiale de la trinquette.', 'Cave', 'images_bdd/Bars/LaTrinquette.jpeg')";
 	$nbModif = $connexion-> exec($queryAjout);
 	echo "<p> Le nombre de modifications est de $nbModif </p>";*/
 
@@ -16,6 +16,11 @@
 
 	/* $queryAjout = "INSERT INTO theatre (nomTheatre, adresseTheatre, noteTheatre, avisTheatre, descTheatre, photoTheatre, lienTheatre)
 	VALUES('Theatre Chanzy', '30 Avenue de Chanzy, 49000 Angers', '4/5', 'Salle intime et conviviale.', '', '', 'https://www.spectacles.carrefour.fr/salles/angers/theatre-chanzy')";
+	$nbModif = $connexion-> exec($queryAjout);
+	echo "<p> Le nombre de modifications est de $nbModif </p>"; */
+
+	/* $queryAjout = "INSERT INTO theatre (nomTheatre, adresseTheatre, noteTheatre, avisTheatre, descTheatre, photoTheatre, lienTheatre)
+	VALUES('Le Quai', 'Cale de la Savette, 49000 Angers', '4/5', 'Salle agréable, recommande pour les familles', '', '', 'http://www.lequai-angers.eu')";
 	$nbModif = $connexion-> exec($queryAjout);
 	echo "<p> Le nombre de modifications est de $nbModif </p>"; */
 
