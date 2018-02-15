@@ -139,7 +139,7 @@
 
 
 .block-body .fond {
-	background: url(../../ressource/image/imagefondpage3.jpg);
+	background: url(../images_site/imagefondpage3.jpg);
 	background-size: cover;
 	height:100px;
 	display: flex;
@@ -151,13 +151,29 @@
 	font-size: 35px;
 }
 
+.block-body .soiree {
+	border: 1px solid black;
+	margin: 10px auto;
+	width: 350px;
+}
 
+.block-body .partie_description {
+	display: flex;
+}
 
+.block-body .image {
+	height: 120px;
+}
 
+.block-body .partie_description .description,
+.block-body .partie_description .adresse,
+.block-body .partie_description .etoiles {
+	margin: 5px;
+}
 
-
-
-
+.block-body  .soiree .avis {
+	margin: 5px 0px;
+}
 
 
 
