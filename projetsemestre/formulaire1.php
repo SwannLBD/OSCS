@@ -37,7 +37,7 @@
 	<div class="container1">
 		<div class="inner1">
 			<div class="logocl">
-				<a href="http://localhost/projetsemestre/se_connecter.php"><img class="logo1cl" src="../ressource/image/logo.png"></a>
+				<a href="http://localhost/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
 			</div>
 			<div class="question1">
 				<h1 class="q1">#Question 1</h1>

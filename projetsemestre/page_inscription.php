@@ -12,7 +12,7 @@
 	<div class="container_inscription">
 	<div class="inner">
 		<div class="logos_inscription">
-			<img class="logo" src="../ressource/image/logo.png" alt="logo">
+			<img class="logo" src="images_site/logo.png" alt="logo">
 			<h1> Inscription </h1>
 			<hr class="souligne" color="white" width="25%" align ="center">
 		</div>

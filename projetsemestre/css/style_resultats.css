@@ -102,7 +102,7 @@
 /* Footer */
 .block-footer{
 	font-family: 'Segoe UI';
-	font-size: 13px;
+	font-size: 10px;
 	position:absolute;
 	bottom:0;
 	width:100%;
@@ -112,7 +112,6 @@
 
 .block-footer .info1 {
     color: black;
-	font-size: 2em;
     text-align: center;
 	display: flex;
 	margin: auto;
@@ -121,7 +120,6 @@
 
 .block-footer .info2 {
     color: black;
-	font-size: 2em;
     text-align: center;
 	display: flex;
 	margin: auto;
@@ -130,7 +128,6 @@
 .block-footer .info3 {
 
     color: black;
-	font-size: 2em;
     text-align: center;
 	display: flex;
 	margin: auto;

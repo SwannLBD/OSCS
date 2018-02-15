@@ -17,7 +17,7 @@
 	</div>
 	<div class="soiree">
 		<div class="box_image">
-			<img src="file:///C:/xampp/htdocs/projet/Ousortircesoir/ressource/image/bar_2.jpg">
+			<img src="images_bdd/Bars/LaTrinquette.jpeg">
 		</div>
 		<div class="box_decription_soiree">
 			<div class="description">

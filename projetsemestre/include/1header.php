@@ -18,11 +18,11 @@
 		<div class="inner">
 		<div class="nav-item">
 			<div class="logos">
-				<img class="logo" src="images/logo.png">
-				<img class="slogan" src="images/logo2.png" alt="slogan">
+				<img class="logo" src="images_site/logo.png">
+				<img class="slogan" src="images_site/logo2.png" alt="slogan">
 			</div>
 		</div>
-			<img id="menu" src="images/menu_blanc.svg" alt="menu" onclick="toggle('liste');">
+			<img id="menu" src="images_site/menu_blanc.svg" alt="menu" onclick="toggle('liste');">
 			<!-- Liste cachée visible en format tablette et ordinateur -->
 			<div class="nav-item">
 			<div class="titre_cache">
@@ -34,7 +34,7 @@
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
 					<p class="nom_prenom">Alexandre Pouivet </p>
-					<img class="user" src="images/user.svg" alt="user" >
+					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>
 			</div>
@@ -47,7 +47,7 @@
 			<ul id="liste">
 				<li class="list">Chercher sa soirée</li>
 				<hr class="trait" width="100%" align ="center">
-					<ul class="list">Alexandre Pouivet <img class="user" src="images/user.svg" alt="user">
+					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
 					<li class="list">Mon compte</li>
 					<li class="list">Se déconnecter</li>
 				</ul>

@@ -10,7 +10,7 @@
 	<div class="container1">
 		<div class="inner1">
 			<div class="logo_commencer">
-				<img src="../ressource/image/logo.png" class="logo_com">
+				<img src="images_site/logo.png" class="logo_com">
 			</div>
 			<div class="slogan_commencer">
 				<a> Choissisez enfin votre soirée sur <br> Où Sortir Ce Soir</a>

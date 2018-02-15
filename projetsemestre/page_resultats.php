@@ -25,7 +25,7 @@
 	</div>
 	<div class="article">
 		<div class="presentation">
-			<img class="photo_article" src="../ressource/image/bar_3.jpg" alt="photo_article">
+			<img class="photo_article" src="images_bdd/Bars/LaTrinquette.jpeg" alt="photo_article">
 			<div class="description">
 				<div class="titre_article">
 					<h2> Bar 1</h2>
@@ -38,21 +38,21 @@
 		</div>
 		<div class="lien_article">
 			<div class="note_article">
-				<img class="infos" src="images/etoiles.png" alt="etoiles">
+				<img class="infos" src="images_site/etoiles.png" alt="etoiles">
 			</div>
 			<div class="adresse_article">
-				<img class="infos" id="adresse" src="images/placeholder.svg" alt="icone_placeholder">
+				<img class="infos" id="adresse" src="images_site/placeholder.svg" alt="icone_placeholder">
 				<p class="infos">10 route de chemellier</p>
 			</div>
 			<div class="horaire_article">
-				<img class="infos" id="horaire" src="images/calendar.svg" alt="icone_horaire">
+				<img class="infos" id="horaire" src="images_site/calendar.svg" alt="icone_horaire">
 				<p class="infos">10h-15h</p>
 			</div>
 		</div>
 	</div>
 	<div class="article">
 		<div class="presentation">
-			<img class="photo_article" src="../ressource/image/bar_3.jpg" alt="photo_article">
+			<img class="photo_article" src="images_bdd/Bars/LeBerThoms.jpg" alt="photo_article">
 			<div class="description">
 				<div class="titre_article">
 					<h2> Bar 2</h2>
@@ -65,14 +65,14 @@
 		</div>
 		<div class="lien_article">
 			<div class="note_article">
-				<img class="infos" src="images/etoiles.png" alt="etoiles">
+				<img class="infos" src="images_site/etoiles.png" alt="etoiles">
 			</div>
 			<div class="adresse_article">
-				<img class="infos" id="adresse" src="images/placeholder.svg" alt="icone_placeholder">
+				<img class="infos" id="adresse" src="images_site/placeholder.svg" alt="icone_placeholder">
 				<p class="infos">10 route de chemellier</p>
 			</div>
 			<div class="horaire_article">
-				<img class="infos" id="horaire" src="images/calendar.svg" alt="icone_horaire">
+				<img class="infos" id="horaire" src="images_site/calendar.svg" alt="icone_horaire">
 				<p class="infos">10h-15h</p>
 			</div>
 		</div>
