@@ -9,12 +9,12 @@
 <body>
 <header>
 
-	<?php 
-	
+	<?php
+
 	include 'include/1header.php';
 	require('include/pdo/pdo.php');
-	
-	
+
+
 	//Bar 1 DANS LA TABLE bar
 	$query = "SELECT * FROM bar WHERE ID_bar='1'";
 		$stmt = $connexion->prepare($query);
@@ -63,22 +63,22 @@
 		$stmt -> execute();
 
 		while($theatre2 = $stmt -> fetch()) {
-			
+
 //Theatre 3 DANS LA TABLE Theatre
 		$query = "SELECT * FROM theatre WHERE ID_theatre='3'";
 		$stmt = $connexion->prepare($query);
 		$stmt -> execute();
 
-		while($theatre3 = $stmt -> fetch()) {			
-			
-	?>
-	
-	
-	
-	
-	
-	
-	
+		while($theatre3 = $stmt -> fetch()) {
+
+?>
+
+
+
+
+
+
+
 
 </header>
 	<div class="block-center">
@@ -92,8 +92,7 @@
 			<div class="resultats">
 		</div>
 	</div>
-	<?php foreach
-			?>
+
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $bar1 -> photoBar ?> alt="photo_article">
@@ -121,7 +120,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $bar2 -> photoBar ?> alt="photo_article">
@@ -149,7 +148,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $bar3 -> photoBar ?> alt="photo_article">
@@ -177,7 +176,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $concert1 -> photoConcert ?> alt="photo_article">
@@ -204,8 +203,8 @@
 				<p class="infos"><?php echo $concert1 -> lienConcert ?></p>
 			</div>
 		</div>
-	</div>	
-		
+	</div>
+
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $concert2 -> photoConcert ?> alt="photo_article">
@@ -232,7 +231,7 @@
 				<p class="infos"><?php echo $concert2 -> lienConcert ?></p>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $theatre1 -> photoTheatre ?> alt="photo_article">
@@ -259,7 +258,7 @@
 				<p class="infos"><?php echo $theatre1 -> lienTheatre ?></p>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $theatre2 -> photoTheatre ?> alt="photo_article">
@@ -286,7 +285,7 @@
 				<p class="infos"><?php echo $theatre2 -> lienTheatre ?></p>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $theatre3 -> photoTheatre ?> alt="photo_article">
@@ -314,7 +313,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<?php
 		}
 
@@ -327,11 +326,11 @@
 		}
 
 		}
-		
+
 		}
-		
+
 		}
-			
+
 	include "include/footer.php";
 	?>
 </body>
