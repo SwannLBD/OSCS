@@ -1,8 +1,5 @@
 <?php
-<<<<<<< HEAD
 
-=======
->>>>>>> 0504ba500a6812d0a88393d74b126e82c17d6ec1
 	session_start();	//Création d'une session
 
 	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
@@ -12,15 +9,9 @@
 	   {
 	//connexion base de données
 
-<<<<<<< HEAD
 	$inputmail 		= $_POST['email']; // comparer le mail entrée au mail présent dans la base de donnée, suite a l'inscription
 	$inputpassword 	= $_POST['password']; // comparer le mot de passe entrée au mot de passe  présent dans la base de donnée, suite a l'inscription
-	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
-=======
-	$inputmail 		= $_POST['mail']; // comparer le mail entrée au mail présent dans la base de donnée, suite a l'inscription
-	$inputpassword 	= $_POST['mdp']; // comparer le mot de passe entrée au mot de passe  présent dans la base de donnée, suite a l'inscription
 	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
->>>>>>> 0504ba500a6812d0a88393d74b126e82c17d6ec1
 			or die ('could not connect to database');
 
 
@@ -44,20 +35,8 @@
 		echo('<p class="error">Error</p>');
 	}
 	mysqli_close($base_donnee);
-<<<<<<< HEAD
-}
-=======
+
 } 
 
-
-
-
-
-
-
-
-
-
->>>>>>> 0504ba500a6812d0a88393d74b126e82c17d6ec1
 
 ?>

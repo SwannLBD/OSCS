@@ -3,7 +3,7 @@
 
 /* PAGE RESULTATS */
 .block-center .fond {
-	background: url(../../ressource/image/imagefondpage3.jpg);
+	background: url(../images_site/imagefondpage3.jpg);
 	background-size: cover;
 	height:100px;
 }
@@ -31,7 +31,7 @@
 	font-size: 30px;
 }
 
-.block-center h2 {
+.block-center h2 a{
 	font-size: 20px;
 	color:black;
 }

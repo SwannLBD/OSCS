@@ -12,11 +12,10 @@
     	<div class="container1">
 			<div class="inner1">
 				<div class="logocl">
-					<img class="logo1cl" src="../ressource/image/logo.png">
-					<img class="logo2cl" src="../ressource/image/logo2.png">
+					<img class="logo1cl" src="images_site/logo.png">
 				</div>
 				<div class="buttonfb">
-					<a href="https://www.facebook.com/"><button type="button" class="btn btn-primary" href="">Se connecter avec Facebook</button></a>
+					<a href="https://www.facebook.com/"><button type="button" class="btn-primary" href="">Se connecter avec Facebook</button></a>
 				</div>
 				<hr class="ligne" width="50%" size="3" color="white" align="center">
 

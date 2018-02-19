@@ -11,7 +11,18 @@
 <?php include 'include/1header.php'	?>	
 <!-- FIN HEADER -->	
 	
-<div class="block-body">	
+<div class="block-body">
+	<?php 
+	$idBar = $_GET['id'];
+	$query = "SELECT * FROM bar WHERE ID_bar=:id";
+	$statementBar = $connexion->prepare($query);
+	$statementBar -> bindValue('id', $idBar);
+	$statementBar -> execute();
+	$i = 0;
+	while($bar = $statementBar -> fetch()) {
+		$i++;
+	
+	?>
 	<div class="fond">
 		<span>Bar n°1</span>
 	</div>
@@ -19,7 +30,7 @@
 		<div class="partie_description">
 			<div class="box_image">
 				<div class="image_soiree">
-					<img src="images_bdd/Bars/LaTrinquette.jpeg" class="image">
+					<img src= <?php $bar -> photoBar ;?> class="image">
 				</div>
 			</div>
 			<div class="box_decription_soiree">
@@ -41,13 +52,35 @@
 			</div>
 		</div>
 		<div class="partie_map">
-				<?php include 'include/map.php'?>
+			<div id="map"></div>
+    		<script>
+      		function initMap() {
+        		var uluru = {lat: 47.474889, lng:  -0.547111};
+        		var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 19,
+         			center: uluru
+        		});
+        		var marker = new google.maps.Marker({
+					position: uluru,
+          			map: map
+        		});
+			}
+    	</script>
+   	 	<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWm01pR4lnDyonlwS0vmS-aYHfPfQPq8&callback=initMap">
+    	</script>
 		</div>
 	</div>
 </div>
 	
 <!-- FOOTER -->	
-<?php include 'include/footer.php'	?>
+	
+	
+<?php 
+		
+	}
+	include 'include/footer.php'	
+?>
 <!-- FIN FOOTER-->
 	
 	
