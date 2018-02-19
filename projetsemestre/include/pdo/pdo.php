@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $dbname = "formulaire";
 $username = "root";
-$userpass = "";
+$userpass = "root";
 
 $connexionStr = "mysql:host=$hostname;dbname=$dbname;charset=utf8";
 

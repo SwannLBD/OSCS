@@ -7,6 +7,7 @@ require 'include/pdo/pdo.php';
 //On initialise des erreurs
 $errors = [];
 
+
 /*CONDITIONS*/
 //Si le nomUser est vide
 if(empty($_POST['lastname'])) {
@@ -19,7 +20,7 @@ if(empty($_POST['firstname'])) {
 }
 
 //Si l'adresse mail est vide,  possiblité de rajouté des paramètres pour plus de précision
-if(empty($_POST['email'])) {
+if(empty($_POST['email']) ) {
     $errors['email'] = "Votre email n'est pas valide";
 }
 //Si le mot de passe est vide ou différent l'un à l'autre

@@ -13,6 +13,7 @@
 	include 'include/1header.php';
 	require('include/pdo/pdo.php');
 ?>	
+
 </header>
 	<div class="block-center">
 		<div class="fond">
@@ -34,10 +35,7 @@ $bar = $connexionStr->query ("SELECT * FROM bar ");
 while($donnees = $bar -> fetch()) 
 	{
 ?>
-	
-	
-	
-		<div class="article">
+
 		<div class="presentation">
 			<img class="photo_article" src= <?php echo $donnees['photoBar'] ?> alt="photo_article">
 			<div class="description">
@@ -68,12 +66,12 @@ while($donnees = $bar -> fetch())
 			</div>
 		</div>
 	</div>
+
 	
 <?php
 		
 	}
-		$bar->closeCursor();
-		
+	$bar->closeCursor();
 	include "include/footer.php";
 ?>
 </body>

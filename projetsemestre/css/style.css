@@ -49,6 +49,12 @@
 	margin: auto;
 }
 
+.logo2cl{
+	height: 180px ;
+	display: flex;
+	margin: auto;
+}
+
 .page_p_1{
 	background: url(../images_site/ForumDesMétiersLM181117.jpeg);
 	background-repeat: no-repeat;
