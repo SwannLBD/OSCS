@@ -20,7 +20,7 @@
 			}
 
 		if(formchecked){  // Si une case a été cocher
-        document.location.href="http://localhost/projetsemestre/formulaire2.php".submit(); // Renvoyer vers la page formulaire 2 si la personne appuie sur le bouton continuer avec au moins une case coché
+        document.location.href="http://localhost/projetsemestre/page_resultats.php".submit(); // Renvoyer vers la page resultat si la personne appuie sur le bouton continuer avec au moins une case coché
     }
 
     else{ //Sinon afficher un message d'alerte pour demander de faire un choix
