@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Document sans titre</title>
+<title>Page résultats</title>
 <link rel="stylesheet" href="css/style_resultats.css">
 </head>
 
@@ -92,6 +92,8 @@
 			<div class="resultats">
 		</div>
 	</div>
+	<?php foreach
+			?>
 	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src=<?php echo $bar1 -> photoBar ?> alt="photo_article">
@@ -195,7 +197,7 @@
 			</div>
 			<div class="adresse_article">
 				<img class="infos" id="adresse" src="images_site/placeholder.svg" alt="icone_placeholder">
-				<p class="infos"> <?php echo $concert[$i] -> adresseConcert ?> </p>
+				<p class="infos"> <?php echo $concert1 -> adresseConcert ?> </p>
 			</div>
 			<div class="horaire_article">
 				<img class="infos" id="horaire" src="images_site/calendar.svg" alt="icone_horaire">
