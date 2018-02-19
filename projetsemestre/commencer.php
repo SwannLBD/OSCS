@@ -1,7 +1,7 @@
 <?php
-	/session_start();	//Création d'une session
+	session_start();	//Création d'une session
 
-	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
+	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
 			or die ('could not connect to database');  // Accès a la base de donnée sinon afficher l'echec de connexion
 
 	if(isset($_POST['mail']) && isset($_POST['mdp'])) // Si le mail et le mot de passe est complété
@@ -10,7 +10,7 @@
 
 	$inputmail 		= $_POST['mail']; // comparer le mail entrée au mail présent dans la base de donnée, suite a l'inscription
 	$inputpassword 	= $_POST['mdp']; // comparer le mot de passe entrée au mot de passe  présent dans la base de donnée, suite a l'inscription
-	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
+	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
 			or die ('could not connect to database');
 
 
@@ -36,7 +36,7 @@
 		echo('<p class="error">Error</p>');
 	}
 	mysqli_close($base_donnee);
-} */
+} 
 
 
 
