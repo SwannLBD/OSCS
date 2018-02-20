@@ -20,7 +20,7 @@
 			}
 
 		if(formchecked){  // Si une case a été cocher
-        document.location.href="http://localhost/projetsemestre/page_resultats.php".submit(); // Renvoyer vers la page resultat si la personne appuie sur le bouton continuer avec au moins une case coché
+        document.location.href="page_resultats.php".submit(); // Renvoyer vers la page resultat si la personne appuie sur le bouton continuer avec au moins une case coché
     }
 
     else{ //Sinon afficher un message d'alerte pour demander de faire un choix
@@ -37,7 +37,7 @@
 	<div class="container1">
 		<div class="inner1">
 			<div class="logocl">
-				<a href="http://localhost/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
+				<a href="se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
 			</div>
 			<div class="question1">
 				<h1 class="q1">#Question 1</h1>
@@ -57,7 +57,7 @@
 					</div>
 				</form>
 				<div class="btn-suivant">
-					<a href="formulaire2.php"><button type="submit" class="btn btn-connection_p_3" onClick="gBox('form-check-input'); return false;">Suivant</button></a>
+					<a href="page_resultats.php"><button type="submit" class="btn btn-connection_p_3" onClick="gBox('form-check-input'); return false;">Suivant</button></a>
 				</div>
 			</div>
 

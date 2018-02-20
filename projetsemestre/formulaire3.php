@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>formulaire3</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
       <script type="text/javascript">
- 
+
 		function gBox(form_check_input){
     var tabcheck = document.getElementsByClassName('form_check_input');
 			var formchecked = false;
@@ -16,26 +16,26 @@
 					formchecked = true;
 				}
 			}
-		
+
 		if(formchecked){
         document.location.href="http://localhost/projetsemestre/formulaire2.php".submit();
     }
-	
+
     else{
         alert('Veuillez cocher une case');
     }
 }
-		
+
 	</script>
-    
+
 </head>
 
 <body class="page3">
-	
+
 	<div class="container1">
 		<div class="inner1">
 			<div class="logocl">
-				<a href="http://localhost/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
+				<a href="http://localhost/Ousortircesoir/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
 			</div>
 			<div class="question1">
 				<h1 class="q1">#Question 3</h1>
@@ -52,7 +52,7 @@
 					<div class="ligne">
 						<input type="checkbox" class="form_check_input">  Choix question 3
 						<input type="checkbox" class="form_check_input">  Choix question 4
-					</div>	
+					</div>
 				</form>
 			</div>
 			<div class="btn-nav">
@@ -61,18 +61,18 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<footer class="block-footer">
 			<div class="info1">
 				<p>Mentions légales</p>
 			</div>
 			<div class="info2">
 				<p>Politique de confidentialité</p>
-			</div>	
-			<div class="info3">
-				<p>Conditions générales</p> 
 			</div>
-  </footer>	
-	
+			<div class="info3">
+				<p>Conditions générales</p>
+			</div>
+  </footer>
+
 </body>
 </html>

@@ -8,6 +8,12 @@ require 'include/pdo/pdo.php';
 $errors = [];
 
 
+//Hachage password
+
+/*$password = $_POST['password'];
+     $hash = password_hash($passwod, PASSWORD_DEFAULT);
+     $hashed_password = "$2y$10$BBCpJxgPa8K.iw9ZporxzuW2Lt478RPUV/JFvKRHKzJhIwGhd1tpa";/*
+
 /*CONDITIONS*/
 //Si le nomUser est vide
 if(empty($_POST['lastname'])) {

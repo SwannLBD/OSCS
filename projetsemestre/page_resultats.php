@@ -9,10 +9,10 @@
 <body>
 <header>
 
-<?php 
+<?php
 	include 'include/1header.php';
 	require('include/pdo/pdo.php');
-?>	
+?>
 
 </header>
 	<div class="block-center">
@@ -25,14 +25,14 @@
 			</div>
 			<div class="resultats">
 		</div>
-	</div>		
-<?php	
+	</div>
+<?php
 
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
 $bar = $connexionStr->query ("SELECT * FROM bar ");
 
-while($donnees = $bar -> fetch()) 
+while($donnees = $bar -> fetch())
 	{
 ?>
 
@@ -43,7 +43,7 @@ while($donnees = $bar -> fetch())
 					<h2>
 						<a href="page_descriptif_soiree.php?id=<?php echo $donnees['ID_bar'];?>">
 							<?php echo $donnees['nomBar'] ?>
-						</a> 
+						</a>
 					</h2>
 				</div>
 				<div class="texte_article">
@@ -67,9 +67,9 @@ while($donnees = $bar -> fetch())
 		</div>
 	</div>
 
-	
+
 <?php
-		
+
 	}
 	$bar->closeCursor();
 	include "include/footer.php";

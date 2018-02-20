@@ -5,6 +5,12 @@
 	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
 			or die ('could not connect to database');  // Accès a la base de donnée sinon afficher l'echec de connexion
 
+//Hachage password
+	/* $password = $_POST['password'];
+			   $hashed_password = "$2y$10$BBCpJxgPa8K.iw9ZporxzuW2Lt478RPUV/JFvKRHKzJhIwGhd1tpa";
+			   password_verify($password, $hashed_password); */
+
+
 	if(isset($_POST['email']) && isset($_POST['password'])) // Si le mail et le mot de passe est complété
 	   {
 	//connexion base de données
@@ -12,7 +18,7 @@
 
 	$inputmail 		= $_POST['email']; // comparer le mail entrée au mail présent dans la base de donnée, suite a l'inscription
 	$inputpassword 	= $_POST['password']; // comparer le mot de passe entrée au mot de passe  présent dans la base de donnée, suite a l'inscription
-	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
+	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
 
 			or die ('could not connect to database');
 
@@ -38,7 +44,32 @@
 	}
 	mysqli_close($base_donnee);
 
-} 
+}
+
+
+
+
+
+
+
+ session_start();
+
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=formulaire', 'root', 'root');
+}catch (Exception $e){ // Si erreur
+    die('Erreur : ' . $e->getMessage());
+}
+//On va chercher tous les membres !
+$resultats=$connexion->query("SELECT * FROM 'membres'");
+//Resultat sous forme d'objet !
+$resultats->setFetchMode(PDO::FETCH_OBJ);
+//On récupère la ligne des membres !
+if( $ligne = $resultats->fetch() ) {
+		header ('location: commencerformulaire.php');
+}else {
+		header('location: se_connecter.php');
+}
 
 
 ?>
