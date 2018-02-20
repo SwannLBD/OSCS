@@ -52,7 +52,7 @@
 
 
 
- session_start();
+ /*session_start();
 
 try
 {
@@ -69,7 +69,7 @@ if( $ligne = $resultats->fetch() ) {
 		header ('location: commencerformulaire.php');
 }else {
 		header('location: se_connecter.php');
-}
+} */
 
 
 ?>
