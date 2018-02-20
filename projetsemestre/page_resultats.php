@@ -24,8 +24,8 @@
 				<h1> 8 résultats </h1>
 			</div>
 			<div class="resultats">
-		</div>
-	</div>		
+			</div>
+		</div>		
 <?php	
 
 $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
@@ -35,7 +35,7 @@ $bar = $connexionStr->query ("SELECT * FROM bar ");
 while($donnees = $bar -> fetch()) 
 	{
 ?>
-
+	<div class="article">
 		<div class="presentation">
 			<img class="photo_article" src= <?php echo $donnees['photoBar'] ?> alt="photo_article">
 			<div class="description">
@@ -65,8 +65,7 @@ while($donnees = $bar -> fetch())
 				<p class="infos"><?php echo ($donnees['horraireOuvBar'] . '-' . $donnees['horraireFermBar']) ?></p>
 			</div>
 		</div>
-	</div>
-
+		</div>
 	
 <?php
 		

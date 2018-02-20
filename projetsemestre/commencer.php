@@ -2,7 +2,7 @@
 
 	session_start();	//Création d'une session
 
-	$base_donnee 	= mysqli_connect('localhost' , 'root' , 'root' , 'formulaire' )
+	$base_donnee 	= mysqli_connect('localhost' , 'root' , '' , 'formulaire' )
 			or die ('could not connect to database');  // Accès a la base de donnée sinon afficher l'echec de connexion
 
 	if(isset($_POST['email']) && isset($_POST['password'])) // Si le mail et le mot de passe est complété

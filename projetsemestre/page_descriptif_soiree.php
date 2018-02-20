@@ -13,9 +13,12 @@
 	
 <div class="block-body">
 	<?php 
+	
+	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+	
 	$idBar = $_GET['id'];
 	$query = "SELECT * FROM bar WHERE ID_bar=:id";
-	$statementBar = $connexion->prepare($query);
+	$statementBar = $connexionStr->prepare($query);
 	$statementBar -> bindValue('id', $idBar);
 	$statementBar -> execute();
 	$i = 0;
@@ -24,21 +27,21 @@
 	
 	?>
 	<div class="fond">
-		<span>Bar n°1</span>
+		<span><?php echo $bar['nomBar'] ?></span>
 	</div>
 	<div class="soiree">
 		<div class="partie_description">
 			<div class="box_image">
 				<div class="image_soiree">
-					<img src= <?php $bar -> photoBar ;?> class="image">
+					<img src='<?php echo $bar['photoBar'] ?>' class='image'>
 				</div>
 			</div>
 			<div class="box_decription_soiree">
 				<div class="description">
-					<p class="texte"> La cave de la Trinquette à Angers est la meilleure du monde </p>
+					<p class="texte"> <?php echo $bar['avisBar'] ?> </p>
 				</div>
 				<div class="adresse">
-				 10 route de chemellier
+				 <?php echo $bar['adresseBar'] ?>
 				</div>
 				<div class="etoiles">
 				 <img src="images_site/etoiles.png">
@@ -55,16 +58,19 @@
 			<div id="map"></div>
     		<script>
       		function initMap() {
-        		var uluru = {lat: 47.474889, lng:  -0.547111};
+        		var uluru = {
+				lat:<?php echo $bar['latitudeBar'] ?>,
+				lng:<?php echo $bar['longitudeBar'] ?> };
+				
         		var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 19,
+					zoom: 17,
          			center: uluru
         		});
         		var marker = new google.maps.Marker({
 					position: uluru,
           			map: map
         		});
-			}
+			};
     	</script>
    	 	<script async defer
     		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWm01pR4lnDyonlwS0vmS-aYHfPfQPq8&callback=initMap">

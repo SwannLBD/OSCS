@@ -104,31 +104,16 @@
 	font-size: 10px;
 	bottom:0;
 	width:100%;
-	height: 10vh;
 	display: flex;
 }
 
-.block-footer .info1 {
+.block-footer .info1,
+.block-footer .info2,
+.block-footer .info3{
     color: black;
     text-align: center;
 	display: flex;
-	margin: auto;
-}
-
-
-.block-footer .info2 {
-    color: black;
-    text-align: center;
-	display: flex;
-	margin: auto;
-}
-
-.block-footer .info3 {
-
-    color: black;
-    text-align: center;
-	display: flex;
-	margin: auto;
+	margin: 0 auto;
 }
 
 /* FIN FOOTER*/
@@ -160,6 +145,7 @@
 
 .block-body .partie_description {
 	display: flex;
+	margin: 5px 0;
 }
 
 .block-body .image {
@@ -172,6 +158,10 @@
 	margin: 5px;
 }
 
+.block-body .partie_description .description{
+	margin-top: 0;
+}
+
 .block-body  .soiree .avis {
 	height: 71px;
 	margin: 5px 0px;
@@ -181,6 +171,13 @@
 	margin: 2px 0;
 }
 
+.block-body #map {
+	height: 180px;
+}
+
+.block-body p {
+	margin: 0;
+}
 
 
 
