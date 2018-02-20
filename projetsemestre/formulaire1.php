@@ -48,12 +48,12 @@
 			<div class="block-reponse">
 				<form method="post" id="rep" class="reponsel1" >
 					<div class="ligne">
-						<input type="checkbox" class="form_check_input">  Bar
-						<input type="checkbox" class="form_check_input">  Théatre
+						<input type="checkbox" class="form_check_input" name="bar" >  Bar
+						<input type="checkbox" class="form_check_input" name="theatre">  Théatre
 					</div >
 					<div class="ligne">
-						<input type="checkbox" class="form_check_input">  Concert
-						<input type="checkbox" class="form_check_input">  Les quatres
+						<input type="checkbox" class="form_check_input" name="concerts">  Concert
+						<input type="checkbox" class="form_check_input"name="all">  Les quatres
 					</div>
 				</form>
 				<div class="btn-suivant">
