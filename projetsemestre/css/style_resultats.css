@@ -143,6 +143,14 @@
 	width: 350px;
 }
 
+.block-body .box_image {
+	display: flex;
+}
+
+.block-body .image_soiree {
+	margin: auto;
+}
+
 .block-body .partie_description {
 	display: flex;
 	margin: 5px 0;
@@ -156,10 +164,6 @@
 .block-body .partie_description .adresse,
 .block-body .partie_description .etoiles {
 	margin: 5px;
-}
-
-.block-body .partie_description .description{
-	margin-top: 0;
 }
 
 .block-body  .soiree .avis {
