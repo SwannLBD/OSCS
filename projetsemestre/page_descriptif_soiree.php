@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Page descriptif soirée</title>
-<link rel="stylesheet" href="css/style_resultats.css">	
+<link rel="stylesheet" href="css/style_resultats.css">
 </head>
 
 <body>
-<!-- HEADER -->	
-<?php include 'include/1header.php'	?>	
-<!-- FIN HEADER -->	
-	
+<!-- HEADER -->
+<?php include 'include/1header.php'	?>
+<!-- FIN HEADER -->
+
 <div class="block-body">
 	<?php 
-	
-	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
-	
+
+	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+
 	$idBar = $_GET['id'];
 	$query = "SELECT * FROM bar WHERE ID_bar=:id";
 	$statementBar = $connexionStr->prepare($query);
@@ -24,7 +24,7 @@
 	$i = 0;
 	while($bar = $statementBar -> fetch()) {
 		$i++;
-	
+
 	?>
 	<div class="fond">
 		<span><?php echo $bar['nomBar'] ?></span>
@@ -46,7 +46,7 @@
 				<div class="etoiles">
 				 <img src="images_site/etoiles.png">
 				</div>
-			</div>	
+			</div>
 		</div>
 		<div class="avis">
 			<div>
@@ -61,7 +61,7 @@
         		var uluru = {
 				lat:<?php echo $bar['latitudeBar'] ?>,
 				lng:<?php echo $bar['longitudeBar'] ?> };
-				
+
         		var map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 17,
          			center: uluru
@@ -78,17 +78,17 @@
 		</div>
 	</div>
 </div>
-	
-<!-- FOOTER -->	
-	
-	
-<?php 
-		
+
+<!-- FOOTER -->
+
+
+<?php
+
 	}
-	include 'include/footer.php'	
+	include 'include/footer.php'
 ?>
 <!-- FIN FOOTER-->
-	
-	
+
+
 </body>
 </html>
