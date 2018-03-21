@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>formulaire2</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
+<link rel="stylesheet" href="css/style.css">
 
       <script type="text/javascript">
 

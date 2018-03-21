@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>se_connecter.html</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page_p_1">
-
+ 
 
     	<div class="container1">
 			<div class="inner1">

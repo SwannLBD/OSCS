@@ -1,0 +1,223 @@
+/*Page de connection*/
+
+.logo1cl{
+	height: 250px ;
+	display: flex;
+	margin: auto;
+}
+
+.logo2cl{
+	height: 180px ;
+	display: flex;
+	margin: auto;
+} 
+
+.page_p_1{
+	background: url(../images_site/ForumDesMétiersLM181117.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 27%;
+	height: 100vh;
+}
+
+.btn-primary{
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	font-size: 41px;
+	border-radius: 50px;
+	margin: auto;
+	display: flex;
+	margin-top: 80px;
+	text-transform: none;
+	padding: 30px;
+}
+
+.lignehorizontale{
+	margin-top: 70px;
+}
+
+.form-group .form-control {
+	background-color: #CECECE;
+	color: black;
+	height: 80px;
+	Width: 550px;
+	font-size: 45px;
+	border-radius: 100px;
+	margin: auto;
+	display: flex;
+	margin-top: 70px;
+	border: none;
+	padding: 15px;
+}
+
+.inscription{
+	color: white;
+}
+
+
+ .form-group1 .form-control {
+	background-color: #CECECE;
+	color: black;
+	height: 80px;
+	Width: 550px;
+	font-size: 45px;
+	border-radius: 100px;
+	margin: auto;
+	display: flex;
+	margin-top: 50px;
+	border: none;
+	padding: 15px;
+}
+
+
+
+.form-check {
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 50px;
+	margin-left: 90px;
+}
+
+
+.btn.btn-connection {
+	display: flex;
+	font-size: 55px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 50px;
+	background: none;
+	border: none;
+}
+.btn.btn-connection:hover{
+	font-size: 65px;
+}
+
+.form-check-label {
+	display: flex;
+}
+
+.form-check-input {
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	margin-left: 40px;
+}
+
+
+
+
+.pasencoremembre a{
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.inscrire a{
+	display: flex;
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: auto;
+	margin-top: 150px;
+	margin-left: 10px;
+}
+
+
+.inner1{
+	margin: auto;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.container1{
+	height: 90vh;
+	width: 100%;
+	display: flex;
+}
+
+.remember{
+	display:flex;
+}
+
+.group{
+	display: flex;
+}
+
+/* PARTIE RESPONSIVE */
+
+@media (min-width: 992px){
+
+
+	/* Page Connexion */
+
+	.page_p_1 {
+
+	}
+
+	.logo1cl {
+		height: 150px;
+		margin-top: 20px;
+	}
+
+	.ligne {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.btn-primary {
+		font-size: 15px;
+		padding: 10px;
+		margin-top: 20px;
+	}
+
+	.form-group .form-control,
+	.form-group1 .form-control{
+		margin-top: 30px;
+		width: 300px;
+		font-size: 15px;
+		height: 30px;
+		padding: 5px;
+		padding-left: 10px;
+	}
+
+	.btn.btn-connection {
+		height: 30px;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	.btn.btn-connection:hover{
+		font-size: 25px;
+		cursor: pointer;
+	}
+
+	.group {
+		margin-top: 20px;
+	}
+
+	.pasencoremembre a{
+		margin-top: 0;
+		font-size: 20px;
+	}
+
+	.inscrire a{
+		margin-top: 0;
+		font-size: 20px;
+	}
+
+	/* Fin Page Connexion */
+
+
+}

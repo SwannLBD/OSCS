@@ -16,11 +16,13 @@
 <header class="block-header">
 <?php
 
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+//$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
-$membres = $connexionStr->query ("SELECT * FROM membres ");
+//$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
-while($membre = $membres -> fetch())
+//$membres = $connexionStr->query ("SELECT * FROM membres ");
+
+//while($membre = $membres -> fetch())
 	{
 
 ?>
@@ -43,7 +45,7 @@ while($membre = $membres -> fetch())
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><?php  echo $membre['nomMembre']  ?></p>
+					<p class="nom_prenom"><!--<?php  /*echo $membre['nomMembre'] */ ?>--></p>
 					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>
@@ -55,7 +57,7 @@ while($membre = $membres -> fetch())
 		<div class="container">
 		<div class="inner">
 			<ul id="liste">
-				<li class="list">Chercher sa soirée</li>
+				<li class="list" ><a href="commencerformulaire.php">Chercher sa soirée</a></li>
 				<hr class="trait" width="100%" align ="center">
 					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
 					<li class="list">Mon compte</li>
@@ -74,7 +76,7 @@ while($membre = $membres -> fetch())
 <?php
 
 	}
-	$membre->closeCursor();
+	// $membre->closeCursor();
 
 ?>
 	</header>

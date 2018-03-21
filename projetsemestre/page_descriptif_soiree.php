@@ -2,19 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Page descriptif soirée</title>
-<link rel="stylesheet" href="css/style_resultats.css">
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body_descriptif">
 <!-- HEADER -->
 <?php include 'include/1header.php'	?>
 <!-- FIN HEADER -->
 
 <div class="block-body">
-	<?php 
+	<?php
 
-	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
 	$idBar = $_GET['id'];
 	$query = "SELECT * FROM bar WHERE ID_bar=:id";

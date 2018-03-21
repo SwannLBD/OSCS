@@ -1,0 +1,168 @@
+
+
+/* PAGE INSCRIPTION */
+
+
+.body_inscription {
+	background:url(../images_site/fond_page_inscription.jpg);
+	background-size:auto;
+	background-repeat: repeat;
+}
+
+.container_inscription { 
+	margin-top: 180px;
+}
+
+.body_inscription .inner {
+	background:rgba(39,39,40,0.7);
+	width:95%;
+	padding: 50px 0px;
+	margin: auto;
+}
+
+.logos_inscription .logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+}
+
+.logos_inscription h1 {
+	color: white;
+	font-size: 80px;
+	display: block;
+	text-align: center;
+	font-family: 'Segoe UI';
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.logos_inscription .souligne {
+	margin: auto;
+}
+
+.formulaire {
+	display: flex;
+	text-align:left;
+	margin-top: 50px;
+}
+
+#form {
+	margin: auto;
+}
+
+.form {
+	width: 380px;
+	font-family: 'Segoe UI';
+	height:60px;
+	font-size: 30px;
+	background-color:rgba(39,39,40,0.7);
+	text-decoration-color: white;
+	color: white;
+	border-radius: 30px;
+	padding-left:20px;
+	border: 3px solid white;
+}
+
+.body_inscription p {
+	display: flex;
+}
+
+.body_inscription p input {
+	margin: 20px auto;
+}
+
+.block-main .formulaire .nom_prenom {
+	display: block;
+
+}
+
+.block-main .formulaire .mail_password {
+	display: block;
+}
+
+.btn_inscript {
+	display: flex;
+	margin-top: 80px;
+}
+
+.bouton_inscrire {
+	margin: auto;
+	width: 450px;
+	height:70px;
+	font-size: 45px;
+	background-color: #00cccb;
+	color: white;
+	border-radius: 50px;
+}
+
+/* PARTIE RESPONSIVE */
+
+@media (min-width: 992px){
+
+	/* Page Inscription */
+
+	.container_inscription {
+	margin-top: 30px;
+	}
+
+	.body_inscription .inner {
+	width:56%;
+	padding-top: 20px;
+	}
+
+	.logos_inscription .logo {
+		height: 150px;
+	}
+
+	.logos_inscription .souligne {
+		width: 35%;
+	}
+
+	.logos_inscription h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	}
+
+	.form {
+	width: 320px;
+	font-size: 15px;
+	}
+
+	.body_inscription p input {
+		height: 30px;
+		width: 220px;
+		margin: 0 10px;
+	}
+
+	.bouton_inscrire {
+	width: 250px;
+	height: 50px;
+	font-size: 25px;
+	border-radius: 20px;
+	}
+
+	.formulaire {
+	margin-top: 30px;
+}
+
+	.block-main .formulaire .nom_prenom {
+	display: flex;
+	}
+
+	.formulaire #firstname {
+	margin-right: 10px;
+	}
+
+.block-main .formulaire .mail_password {
+	margin-top: 40px;
+	display: flex;
+	}
+
+	.btn_inscript {
+	margin-top: 50px;
+}
+
+	/* Fin Page Inscription */

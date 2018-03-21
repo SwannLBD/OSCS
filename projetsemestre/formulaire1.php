@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>formulaire1</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
+<link rel="stylesheet" href="css/style.css">
 
 
 
@@ -48,12 +49,12 @@
 			<div class="block-reponse">
 				<form method="post" id="rep" class="reponsel1" >
 					<div class="ligne">
-						<input type="checkbox" class="form_check_input" name="bar" >  Bar
-						<input type="checkbox" class="form_check_input" name="theatre">  Théatre
+						<input type="checkbox" class="form_check_input" name="bar" > <p> Bar </p>
+						<input type="checkbox" class="form_check_input" name="theatre"> <p> Théatre </p>
 					</div >
 					<div class="ligne">
-						<input type="checkbox" class="form_check_input" name="concerts">  Concert
-						<input type="checkbox" class="form_check_input"name="all">  Les quatres
+						<input type="checkbox" class="form_check_input" name="concerts"> <p> Concert </p>
+						<input type="checkbox" class="form_check_input"name="all"> <p> Les trois </p>
 					</div>
 				</form>
 				<div class="btn-suivant">
