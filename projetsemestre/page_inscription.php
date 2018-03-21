@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Page inscription</title>
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 

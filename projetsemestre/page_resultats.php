@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Page résultats</title>
-<link rel="stylesheet" href="css/style_resultats.css">
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>

@@ -1,0 +1,67 @@
+
+/*Page je commence*/
+
+.logo1_2{
+	height: 500px ;
+	display: flex;
+	margin: auto;
+	margin-top: -150px;
+}
+
+
+.page2{
+	background: url(../../ressource/image/Page2BK.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 101vh;
+}
+
+.titre_sl{
+	font-size: 60px;
+	color: #00cccb;
+	font: Arial;
+}
+
+.slogancl {
+	display: flex;
+	font-size: 32px;
+	color: #00cccb;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.btn.btn-connection_2 {
+	display: flex;
+	font-size: 120px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 400px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.msgerreur{
+	font-size: 100px;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 500px;
+}
+
+.msgerreur1{
+	font-size: 100px;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 500px;
+}
+
+.inner1 a{
+	text-decoration: none;
+}

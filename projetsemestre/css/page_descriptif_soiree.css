@@ -1,0 +1,97 @@
+/* PAGE DESCRIPTIF SOIREE */
+
+.block-body {
+	font-family: "Segoe UI";
+}
+
+.block-body .fond {
+	background: url(../images_site/imagefondpage3.jpg);
+	background-size: cover;
+	height:100px;
+	display: flex;
+}
+
+.block-body span {
+	margin: auto;
+	color: white;
+	font-size: 25px;
+}
+
+.block-body .soiree {
+	border: 1px solid black;
+	margin: 10px auto;
+	width: 99%;
+}
+
+.block-body .box_image {
+	display: flex;
+}
+
+.block-body .image_soiree {
+	margin: auto;
+}
+
+.block-body .partie_description {
+	display: flex;
+	margin: 5px 0;
+}
+
+.block-body .image {
+	height: 120px;
+}
+
+.block-body .partie_description .description,
+.block-body .partie_description .adresse,
+.block-body .partie_description .etoiles {
+	margin: 5px;
+}
+
+.block-body  .soiree .avis {
+	height: 71px;
+	margin: 5px ;
+}
+
+.block-body .avis h3 {
+	margin: 2px 0;
+}
+
+.block-body #map {
+	height: 180px;
+}
+
+.block-body p {
+	margin: 0;
+	color: black
+}
+
+.body_descriptif .block-footer p{
+	color: black;
+}
+
+/* Partie Responsive */
+
+@media (min-width: 992px) {
+	.block-body .soiree {
+			width: 75%;
+	}
+
+	.block-body .image {
+		height: 200px;
+	}
+
+	.block-body .box_decription_soiree {
+		margin: 10px auto;
+	}
+
+	.block-body .partie_description {
+		margin: 5px 0 5px 5px;
+	}
+
+	.block-body  .soiree .avis {
+		margin: 10px;
+	}
+
+	.block-body #map {
+		height: 400px;
+	}
+}

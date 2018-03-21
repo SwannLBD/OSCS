@@ -1,0 +1,85 @@
+
+/* Page commencer_formulaire */
+
+
+.commencer_le_form{
+	background: url(../images_site/Page2BK.png);
+	background-repeat: no-repeat;
+	background-size: 350%;
+	background-position: 50%;
+	height: 100%;
+}
+
+.logo_commencer{
+	display: flex;
+	margin: auto;
+}
+
+.logo_com{
+	height: 280px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.slogan_commencer{
+	display: flex;
+	font-size: 60px;
+	color: #00cccb;
+	font-family: 'Segoe UI';
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.button_commencer_form{
+	text-align: center;
+	display: flex;
+	font-size: 50px;
+	color: #00CCCB;
+	font-family: 'Segoe UI';
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 10px 65px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.button_commencer_form:hover{
+	color: #515050;
+	background: #00CCCB;
+	border-color: #515050;
+}
+
+.button_commencer_form a {
+	text-decoration: none;
+}
+
+/* PARTIE RESPONSIVE */
+
+@media (min-width: 992px){
+
+
+	/* Page Commencer_formulaire */
+
+	.commencer_le_form{
+		background-size: cover;
+	}
+
+	.commencer_le_form .logo_com {
+		height: 150px;
+	}
+
+	.commencer_le_form .slogan_commencer {
+		font-size: 35px;
+	}
+
+	.commencer_le_form .button_commencer_form {
+		font-size: 20px;
+	}
+
+	.button_commencer_form{
+	margin-top: 30px;
+}
+	/* Fin Page Commencer_formulaire*/

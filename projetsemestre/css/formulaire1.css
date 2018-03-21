@@ -1,0 +1,170 @@
+
+/* Page de formulaire */
+
+.page3{
+	background: url(..//images_site/imagefondpage3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 36%;
+	height: 101vh;
+}
+
+.question1{
+	display: flex;
+}
+
+.q1{
+	display: flex;
+	font-size: 90px;
+	color: #00cccb;
+	font-family: 'Segoe UI';
+	font-weight: 600;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.question-ecrite{
+	display: flex;
+}
+
+.question-ecrite .question-form{
+	display: flex;
+	font-size: 50px;
+	color: white;
+	font-family: Arial;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+
+.reponsel1{
+	display: block;
+	margin-top: 80px;
+	flex-wrap: wrap;
+	font-size: 30px;
+	font-family: Arial;
+	color:white;
+}
+
+.ligne input:first-of-type {
+	margin-left: 0;
+}
+
+.ligne input:last-of-type {
+	margin-left: 100px;
+}
+
+.ligne{
+	margin: auto;
+	margin-top: 40px;
+	display: flex;
+}
+
+.form_check_input{
+	width: .8em;
+	height: .8em;
+    font-size: 80px;
+	position: relative;
+}
+
+.block-reponse p {
+	display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 50px;
+    width: 200px;
+}
+
+.block-reponse{
+	display: inline-block;
+}
+
+.btn.btn-connection_p_3{
+	display: flex;
+	font-size: 60px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: 'Segoe UI';
+	margin: auto;
+	margin-top: 100px;
+	background: #515050;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+.btn-suivant .btn-connection_p_3:hover {
+	display: flex;
+	font-size: 60px;
+	font-weight: bold;
+	color: #515050;
+	font-family: 'Segoe UI';
+	margin: auto;
+	margin-top: 100px;
+	background: #00cccb;
+	border-radius:30px;
+	padding: 15px;
+	border: groove;
+	border-color: #515050;
+}
+
+/* PARTIE RESPONSIVE */
+
+@media (min-width: 992px){
+
+
+
+	/* Page Formulaire */
+
+	.page3 {
+		height: 100%;
+	}
+
+	.page3 .logo1cl {
+		margin-top: 0;
+	}
+
+	.page3 .question1 .q1 {
+		font-size: 30px;
+		margin-top: 10px;
+	}
+
+	.question-ecrite .question-form {
+		margin-top: 10px;
+		font-size: 25px;
+	}
+
+	.reponsel1 {
+		margin-top: 20px;
+		display: block;
+	}
+
+	.btn.btn-connection_p_3 {
+		font-size: 20px;
+		padding: 10px 50px;
+		border-radius: 25px;
+		margin-top: 30px;
+	}
+
+	.btn-suivant .btn-connection_p_3:hover {
+		font-size: 20px;
+		padding: 10px 50px;
+		border-radius: 25px;
+		margin-top: 30px;
+	}
+
+	.form_check_input{
+    font-size: 30px;
+	}
+
+	.block-reponse p {
+    margin-left: 10px;
+    font-size: 20px;
+    width: 150px;
+	}
+
+	/* Fin Page Formulaire */

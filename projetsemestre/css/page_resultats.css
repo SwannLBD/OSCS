@@ -1,5 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
 
 /* PAGE RESULTATS */
 .block-center .fond {
@@ -96,102 +94,6 @@
 	height:20px;
 }
 
-/* FIN PAGE RESULTATS */
-
-/* Footer */
-.block-footer{
-	font-family: 'Segoe UI';
-	font-size: 10px;
-	bottom:0;
-	width:100%;
-	display: flex;
-}
-
-.block-footer .info1,
-.block-footer .info2,
-.block-footer .info3{
-    color: black;
-    text-align: center;
-	display: flex;
-	margin: 0 auto;
-}
-
-/* FIN FOOTER*/
-
-/* PAGE DESCRIPTIF SOIREE */
-
-.block-body {
-	font-family: "Segoe UI";
-}
-
-.block-body .fond {
-	background: url(../images_site/imagefondpage3.jpg);
-	background-size: cover;
-	height:100px;
-	display: flex;
-}
-
-.block-body span {
-	margin: auto;
-	color: white;
-	font-size: 35px;
-}
-
-.block-body .soiree {
-	border: 1px solid black;
-	margin: 10px auto;
-	width: 350px;
-}
-
-.block-body .box_image {
-	display: flex;
-}
-
-.block-body .image_soiree {
-	margin: auto;
-}
-
-.block-body .partie_description {
-	display: flex;
-	margin: 5px 0;
-}
-
-.block-body .image {
-	height: 120px;
-}
-
-.block-body .partie_description .description,
-.block-body .partie_description .adresse,
-.block-body .partie_description .etoiles {
-	margin: 5px;
-}
-
-.block-body  .soiree .avis {
-	height: 71px;
-	margin: 5px 0px;
-}
-
-.block-body .avis h3 {
-	margin: 2px 0;
-}
-
-.block-body #map {
-	height: 180px;
-}
-
-.block-body p {
-	margin: 0;
-}
-
-
-
-
-
-
-/* FIN PAGE DESCRIPTIF SOIREE */
-
-/* PARTIE RESPONSIVE */
-
 
 @media (min-width: 992px){
 	
@@ -201,7 +103,7 @@
 		margin: 20px auto;
 	}
 	
-	/* FIN PAGE RESULTATS */
+
 	
 	
 }
