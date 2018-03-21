@@ -43,7 +43,8 @@
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><!--<?php  echo $membre['nomMembre']  ?>--></p>
+					<p class="nom_prenom"><?php // echo $membre['nomMembre']  ?>
+					</p>
 					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>

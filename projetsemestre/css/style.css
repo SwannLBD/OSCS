@@ -9,11 +9,9 @@
 @import url('page_inscription.css');
 @import url('page_je_commence.css');
 @import url('page_resultats.css');
-@import url('.css');
 
 
 *{
 	margin:0;
 	padding:0;
 }
-
