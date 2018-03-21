@@ -15,13 +15,13 @@
 <body>
 <header class="block-header">
 <?php
-	
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+
+$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
 $membres = $connexionStr->query ("SELECT * FROM membres ");
 
 while($membre = $membres -> fetch())
-	{	
+	{
 
 ?>
 		<div class="container">
@@ -74,9 +74,9 @@ while($membre = $membres -> fetch())
 <?php
 
 	}
-	$membre->closeCursor();		
-		
-?>			
+	$membre->closeCursor();
+
+?>
 	</header>
 </body>
 </html>

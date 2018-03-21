@@ -797,23 +797,23 @@
 
 	/* Fin Page de Formulaire */
 
-	
+
 	/* Page Connexion */
-	
+
 	.page_p_1 {
-		
+
 	}
-	
+
 	.logo1cl {
 		height: 150px;
 		margin-top: 50px;
 	}
-	
+
 	.btn-primary {
 		font-size: 20px;
 		padding: 15px;
 	}
-	
+
 	.form-group .form-control,
 	.form-group1 .form-control{
 		width: 400px;
@@ -821,26 +821,26 @@
 		height: 50px;
 		padding: 5px;
 	}
-	
+
 	.btn.btn-connection {
 		font-size: 30px;
 	}
-	
+
 	.group {
 		margin-top: 20px;
 	}
-	
+
 	.pasencoremembre a{
 		margin-top: 0;
 		font-size: 30px;
 	}
-	
+
 	.inscrire a{
 		margin-top: 0;
 		font-size: 30px;
 	}
-	
+
 	/* Fin Page Connexion */
-	
-	
+
+
 }
