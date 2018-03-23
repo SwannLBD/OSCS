@@ -13,7 +13,9 @@
 	<div class="container_inscription">
 	<div class="inner">
 		<div class="logos_inscription">
-			<img class="logo" src="images_site/logo.png" alt="logo">
+			<a href="index.php">
+				<img class="logo" src="images_site/logo.png" alt="logo">
+			</a>
 			<h1> Inscription </h1>
 			<hr class="souligne" color="white" width="25%" align ="center">
 		</div>
@@ -36,7 +38,7 @@
 				</p>
 				</div>
 				<div class="btn_inscript">
-					<button type="submit" class="bouton_inscrire"> S'inscrire </button>
+					<button type="submit" name="btn_inscript" class="bouton_inscrire"> S'inscrire </button>
 				</div>
 			</form>
 		</div>

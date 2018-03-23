@@ -15,7 +15,7 @@
 <div class="block-body">
 	<?php
 
-	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
 	$idBar = $_GET['id'];
 	$query = "SELECT * FROM bar WHERE ID_bar=:id";

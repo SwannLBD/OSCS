@@ -67,7 +67,7 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 		</div>
 		<!-- Menu déroulant caché -->
 		<ul id="liste_2">
-			<li class="list_2">Mon compte</li>
+			<li class="list_2"><a href="page_modif.php">Mon compte</a></li>
 			<li class="list_2"><a href="deco.php">Se déconnecter</a></li>
 		</ul>
 		<!-- Fin menu déroulant  caché -->

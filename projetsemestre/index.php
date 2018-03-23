@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 </head>
 
 <body class="page_p_1">
- 
+
 
     	<div class="container1">
 			<div class="inner1">

@@ -11,7 +11,8 @@
 <header>
 
 <?php
-	include 'include/1header.php';
+
+	include 'header.php';
 	require('include/pdo/pdo.php');
 ?>
 
@@ -29,7 +30,7 @@
 	</div>
 <?php
 
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
 $bar = $connexionStr->query ("SELECT * FROM bar ");
 

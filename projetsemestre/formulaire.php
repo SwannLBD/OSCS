@@ -8,21 +8,15 @@ require 'include/pdo/pdo.php';
 $errors = [];
 
 
-//Hachage password
-
-/*$password = $_POST['password'];
-     $hash = password_hash($passwod, PASSWORD_DEFAULT);
-     $hashed_password = "$2y$10$BBCpJxgPa8K.iw9ZporxzuW2Lt478RPUV/JFvKRHKzJhIwGhd1tpa";/*
-
 /*CONDITIONS*/
 //Si le nomUser est vide
 if(empty($_POST['lastname'])) {
-    $errors['lastname'] = "votre nom n'est pas valide (Alphanumérique)";
+    $errors['lastname'] = "votre nom n'est pas valide";
 }
 
 //Si le prenomUser est vide, possiblité de rajouté des paramètres pour plus de précision
 if(empty($_POST['firstname'])) {
-    $errors['firstname'] = "votre prénom n'est pas valide (Alphanumérique)";
+    $errors['firstname'] = "votre prénom n'est pas valide";
 }
 
 //Si l'adresse mail est vide,  possiblité de rajouté des paramètres pour plus de précision
@@ -39,13 +33,18 @@ if(empty($_POST['password'])) {
 //Si aucune erreur n'et detecté
 if(empty($errors)){
 
+  $hashpass=$_POST['password'];
+  $hashpass=sha1($hashpass);
+  $mail = $_POST['email'];
+
 	$stmt = $connexion->prepare('INSERT INTO membres (nomMembre, prenomMembre, emailMembre, passwordMembre)
 	VALUES (:nomMembre, :prenomMembre, :emailMembre, :passwordMembre )');
 	$stmt->bindValue(':nomMembre', $_POST['lastname']);
 	$stmt->bindValue(':prenomMembre', $_POST['firstname']);
 	$stmt->bindValue(':emailMembre', $_POST['email']);
-	$stmt->bindValue(':passwordMembre', $_POST['password']);
+  $stmt->bindValue(':passwordMembre', $hashpass /*$_POST['password']*/ );
 	$stmt->execute();
+
 
 	header('Location: commencerformulaire.php');
 
