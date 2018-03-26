@@ -87,6 +87,8 @@ a {
 	list-style: none;
 	padding:0;
 }
+
+
 .menu .trait {
 	background-color: white;
 	height: 2px;
@@ -179,6 +181,10 @@ a {
 		padding:10px 0;
 	}
 
+	.menu .list_2 {
+		padding-left: 2rem;
+	}
+
 } /* Fin partie tablette */
 
 @media (min-width:992px){ /* Partie ordinateur*/
@@ -225,6 +231,10 @@ a {
 		font-size: 16px;
 		color: white;
 		margin-right: 7px;
+	}
+
+	.menu .list_2 {
+		padding-left: 2rem;
 	}
 }
 

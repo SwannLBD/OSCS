@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 $hashpass=$_POST['password'];
 $hashpass=sha1($hashpass);
@@ -15,6 +14,7 @@ if(!$modif) {
 } else {
 
 }
+
 
 
 

@@ -11,12 +11,10 @@
 
 <body class="body_inscription">
 
-	<?php
-		require('include/pdo/pdo.php');
-
-		session_start();
-
-	?>
+<?php
+require('include/pdo/pdo.php');
+session_start();
+?>
 
 <main class="block-main">
 	<div class="container_inscription">

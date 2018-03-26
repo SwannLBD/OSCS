@@ -13,19 +13,13 @@
 </head>
 
 <body>
-<header class="block-header">
-<?php
-
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
-
-//$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
-
-//$membres = $connexionStr->query ("SELECT * FROM membres ");
-
-//while($membre = $membres -> fetch())
-	{
-
-?>
+	<?php
+	session_start();
+	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+	$membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
+	while ($donnees = $membres -> fetch()) {
+	?>
+<div class="block-header">
 		<div class="container">
 		<div class="inner">
 		<div class="nav-item">
@@ -45,7 +39,7 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><!--<?php  /*echo $membre['nomMembre'] */ ?>--></p>
+					<p class="nom_prenom"> <?php echo $donnees['nomMembre']; ?> <?php echo $donnees['prenomMembre']; ?> </p> <!-- deux balises php pour mettre un espace entre le nom et prénom -->
 					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>
@@ -59,7 +53,7 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 			<ul id="liste">
 				<li class="list" ><a href="commencerformulaire.php">Chercher sa soirée</a></li>
 				<hr class="trait" width="100%" align ="center">
-					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
+					<ul class="list"><?php echo $donnees['nomMembre']; ?> <?php echo $donnees['prenomMembre']; ?></p> <img class="user" src="images_site/user.svg" alt="user">
 						<li class="list"> <a href="page_modif.php">Mon compte</a></li>
 						<li class="list"> <a href="deco.php">Se déconnecter</a></li>
 					</ul>
@@ -72,13 +66,11 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 		</ul>
 		<!-- Fin menu déroulant  caché -->
 		</div>
-	</menu>
-<?php
-
-	}
-	// $membre->closeCursor();
-
-?>
-	</header>
+		</menu>
+	</div>
+	<?php
+		}
+		$membres->closeCursor();
+	?>
 </body>
 </html>
