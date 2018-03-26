@@ -16,7 +16,7 @@
 <header class="block-header">
 <?php
 
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
 //$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
