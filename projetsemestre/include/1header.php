@@ -16,7 +16,7 @@
 <header class="block-header">
 <?php
 
-//$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 
 //$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
@@ -60,9 +60,9 @@
 				<li class="list" ><a href="commencerformulaire.php">Chercher sa soirée</a></li>
 				<hr class="trait" width="100%" align ="center">
 					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
-					<li class="list">Mon compte</li>
-					<li class="list"> <a href="deco.php">Se déconnecter</a></li>
-				</ul>
+						<li class="list"> <a href="page_modif.php">Mon compte</a></li>
+						<li class="list"> <a href="deco.php">Se déconnecter</a></li>
+					</ul>
 			</ul>
 		</div>
 		<!-- Menu déroulant caché -->

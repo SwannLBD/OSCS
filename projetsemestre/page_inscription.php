@@ -36,7 +36,7 @@
 				</p>
 				</div>
 				<div class="btn_inscript">
-					<button type="submit" class="bouton_inscrire"> S'inscrire </button>
+					<button type="submit" name="btn_inscript" class="bouton_inscrire"> S'inscrire </button>
 				</div>
 			</form>
 		</div>

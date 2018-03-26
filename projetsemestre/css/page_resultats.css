@@ -73,8 +73,9 @@
 	font-size: 10px;
 }
 
-.block-center a .article {
+.block-center .article {
 	border: 1px solid black;
+	margin: 10px;
 }
 
 .block-center .presentation {

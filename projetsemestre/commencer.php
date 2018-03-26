@@ -42,34 +42,5 @@
 	} else {
 		echo('<p class="error">Error</p>');
 	}
-	mysqli_close($base_donnee);
-
 }
-
-
-
-
-
-
-
- /*session_start();
-
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=formulaire', 'root', 'root');
-}catch (Exception $e){ // Si erreur
-    die('Erreur : ' . $e->getMessage());
-}
-//On va chercher tous les membres !
-$resultats=$connexion->query("SELECT * FROM 'membres'");
-//Resultat sous forme d'objet !
-$resultats->setFetchMode(PDO::FETCH_OBJ);
-//On récupère la ligne des membres !
-if( $ligne = $resultats->fetch() ) {
-		header ('location: commencerformulaire.php');
-}else {
-		header('location: se_connecter.php');
-} */
-
-
-?>
+ ?>

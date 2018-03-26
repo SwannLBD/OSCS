@@ -15,7 +15,7 @@
 <header>
 
 <?php
-	include 'include/1header.php';
+	include 'header.php';
 	require('include/pdo/pdo.php');
 ?>
 
@@ -34,7 +34,6 @@
 
 <?php
 
-//On récupère la réponse de la question précédente
 $_SESSION['reponse3'] = $_GET['reponse3'];
 
 
