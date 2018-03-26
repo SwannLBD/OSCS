@@ -1,0 +1,27 @@
+/* Page de formulaire */
+
+.body_formulaire {
+	background: url(..//images_site/imagefondpage3.jpg);
+	background-repeat: no-repeat;
+	background-size: 350%;
+	background-position: 36%;
+}
+
+.logo_formulaire .logo {
+	width: 150px;
+}
+
+
+/* PARTIE RESPONSIVE */
+
+/* PARTIE TABLETTE*/
+@media(min-width: 768px){
+
+}
+
+
+@media(min-width: 992px){
+
+
+}
+	/* Fin Page Formulaire */

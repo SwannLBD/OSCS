@@ -7,7 +7,6 @@
 	background-repeat: no-repeat;
 	background-size: 350%;
 	background-position: 50%;
-	height: 100%;
 }
 
 .logo_commencer{
@@ -58,21 +57,13 @@
 
 /* PARTIE RESPONSIVE */
 
-@media (min-width: 992px){
-
-
-	/* Page Commencer_formulaire */
-
-	.commencer_le_form{
-		background-size: cover;
-	}
-
-	.commencer_le_form .logo_com {
-		height: 150px;
-	}
-
-	.commencer_le_form .slogan_commencer {
+@media (min-width: 768px){
+	.slogan_commencer{
 		font-size: 35px;
+	}
+
+	.logo_com{
+		height: 150px;
 	}
 
 	.commencer_le_form .button_commencer_form {
@@ -81,5 +72,8 @@
 
 	.button_commencer_form{
 	margin-top: 30px;
+	}
+
 }
 	/* Fin Page Commencer_formulaire*/
+}

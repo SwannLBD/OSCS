@@ -2,6 +2,8 @@
 
 .block-body {
 	font-family: "Segoe UI";
+	background: url(../images_site/fond.jpg);
+	padding-bottom: 10px;
 }
 
 .block-body .fond {
@@ -19,6 +21,7 @@
 
 .block-body .soiree {
 	border: 1px solid black;
+	background: white;
 	margin: 10px auto;
 	width: 99%;
 }

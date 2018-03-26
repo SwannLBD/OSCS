@@ -1,3 +1,8 @@
+<?php
+	session_start();
+
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -6,74 +11,82 @@
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
 
-      <script type="text/javascript">
-
-		function gBox(form_check_input){
-    var tabcheck = document.getElementsByClassName('form_check_input');
-			var formchecked = false;
-			for (i=0; i<tabcheck.length;i++){
-				tabcheck[i].checked;
-				if (tabcheck[i].checked){
-					formchecked = true;
-				}
-			}
-
-		if(formchecked){
-        document.location.href="http://localhost/projetsemestre/formulaire2.php".submit();
-    }
-
-    else{
-        alert('Veuillez cocher une case');
-    }
-}
-
-	</script>
-
 </head>
 
-<body class="page3">
+<body class="body_formulaire">
 
-	<div class="container1">
-		<div class="inner1">
-			<div class="logocl">
+  <?php
+    //Script connexion à la base de données
+    include('include/pdo/pdo.php');
+
+    //Requête pour la table question
+    $idQuestion = 3;
+    $query = "SELECT * FROM question WHERE idQuestion=:id LIMIT 0,1";
+    $statementQuestion = $connexion->prepare($query);
+    $statementQuestion -> bindValue(':id', $idQuestion);
+    $statementQuestion -> execute();
+
+    //Passage à la question suivante
+    if ($idQuestion == 3) {
+      echo "<form method='get' action='page_resultats.php'>";
+
+    //Si erreur, redirection vers début du formulaire
+    } else {
+      echo "Erreur, pour revenir au début du formulaire, <a href='debutformulaire.php'>cliquez-ici</a>";
+    }
+
+  ?>
+
+	<div class="container_formulaire">
+		<div class="inner">
+			<div class="logo_formulaire">
 				<a href="http://localhost/Ousortircesoir/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"></a>
 			</div>
-			<div class="question1">
-				<h1 class="q1">#Question 3</h1>
+			<div class="questions">
+				<h1 class="question">#Question 3</h1>
 			</div>
 			<div class="question-ecrite">
-				<p class="question-form"> Haut peregrini extrusis quique indignitatis  paucis milia ita milia ?</p>
+				<p class="question-form">
+          <?php  while ($question = $statementQuestion -> fetch()) {
+            echo $question -> texteQuestion; ?>
+        </p>
 			</div>
 			<div class="block-reponse">
-				<form method="post" id="rep" class="reponsel1">
+				<form method="get" id="rep" class="reponse1">
 					<div class="ligne">
-						<input type="checkbox" class="form_check_input">  Choix question 1
-						<input type="checkbox" class="form_check_input">  Choix question 2
+            <?php
+
+            //Requête pour la table réponse
+  					$query = "SELECT * FROM reponse WHERE idQuestion=:id";
+  					$statementReponse = $connexion->prepare($query);
+  					$statementReponse -> bindValue(':id', $idQuestion);
+  					$statementReponse -> execute();
+
+
+  					//Affichage des réponses correspondantes
+  					$i=0;
+  					while ($reponse = $statementReponse -> fetch()) {
+  						$i++;
+							echo "<div class='check'>
+							<input id='reponse".$i."' class='form_check_input' name='reponse3' type='radio' value ='".$reponse -> idReponse."'required><label for='reponse".$i."'>".$reponse -> texteReponse."</label><br />
+							</div>";
+						}
+  				}
+            ?>
 					</div >
-					<div class="ligne">
-						<input type="checkbox" class="form_check_input">  Choix question 3
-						<input type="checkbox" class="form_check_input">  Choix question 4
-					</div>
 				</form>
 			</div>
-			<div class="btn-nav">
-				<a href="http://localhost/projetsemestre/formulaire2.php"><button type="submit" class="btn btn-connection_p_5_1">Précedent</button></a>
-			<a href="page_resultats.php"><button type="submit" class="btn btn-connection_p_5_2" onClick="gBox('form-check-input'); return false;" >Trouver ma soirée</button></a>
-			</div>
+			<input class="btn btn-connection_p_3" name="submit" type="submit" value="Valider">
 		</div>
 	</div>
 
-	<footer class="block-footer">
-			<div class="info1">
-				<p>Mentions légales</p>
-			</div>
-			<div class="info2">
-				<p>Politique de confidentialité</p>
-			</div>
-			<div class="info3">
-				<p>Conditions générales</p>
-			</div>
-  </footer>
+  <?php
+
+    include "include/footer.php";
+    //On récupère la réponse de la question précédente
+    $_SESSION['reponse2'] = $_GET['reponse2'];
+
+  ?>
 
 </body>
 </html>

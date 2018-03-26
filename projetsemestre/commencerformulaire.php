@@ -14,7 +14,7 @@
 				<img src="images_site/logo.png" class="logo_com">
 			</div>
 			<div class="slogan_commencer">
-				<a> Choissisez enfin votre soirée sur <br> Où Sortir Ce Soir</a>
+				<a> Choisissez enfin votre soirée sur <br> Où Sortir Ce Soir</a>
 			</div>
 			<div class="button_commencer">
 				<a href="formulaire1.php"><button class="button_commencer_form"> Commencer </button></a>

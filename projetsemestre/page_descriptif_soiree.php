@@ -15,34 +15,35 @@
 <div class="block-body">
 	<?php
 
-	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
+include 'include/pdo/pdo.php';
 
-	$idBar = $_GET['id'];
-	$query = "SELECT * FROM bar WHERE ID_bar=:id";
-	$statementBar = $connexionStr->prepare($query);
-	$statementBar -> bindValue('id', $idBar);
-	$statementBar -> execute();
-	$i = 0;
-	while($bar = $statementBar -> fetch()) {
-		$i++;
+$idEvenement = $_GET['id'];
+$query = "SELECT * FROM evenement WHERE idEvenement=:id";
+$statementEvenement = $connexion->prepare($query);
+$statementEvenement -> bindValue(':id', $idEvenement);
+$statementEvenement -> execute();
+
+$i = 0;
+while ($evenement = $statementEvenement -> fetch()) {
+	$i++;
 
 	?>
 	<div class="fond">
-		<span><?php echo $bar['nomBar'] ?></span>
+		<span><?php echo $evenement -> nomEvenement ?></span>
 	</div>
 	<div class="soiree">
 		<div class="partie_description">
 			<div class="box_image">
 				<div class="image_soiree">
-					<img src='<?php echo $bar['photoBar'] ?>' class='image'>
+					<img src='<?php echo $evenement -> photoEvenement ?>' class='image'>
 				</div>
 			</div>
 			<div class="box_decription_soiree">
 				<div class="description">
-					<p class="texte"> <?php echo $bar['avisBar'] ?> </p>
+					<p class="texte"> <?php echo $evenement -> nomEvenement ?> </p>
 				</div>
 				<div class="adresse">
-				 <?php echo $bar['adresseBar'] ?>
+				 <?php echo $evenement -> adresseEvenement ?>
 				</div>
 				<div class="etoiles">
 				 <img src="images_site/etoiles.png">
@@ -60,8 +61,8 @@
     		<script>
       		function initMap() {
         		var uluru = {
-				lat:<?php echo $bar['latitudeBar'] ?>,
-				lng:<?php echo $bar['longitudeBar'] ?> };
+				lat:<?php echo $evenement -> latitudeEvenement ?>,
+				lng:<?php echo $evenement -> longitudeEvenement ?> };
 
         		var map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 17,
