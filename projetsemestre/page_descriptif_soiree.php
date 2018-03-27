@@ -9,12 +9,12 @@
 
 <body class="body_descriptif">
 <!-- HEADER -->
-<?php include 'include/1header.php'	?>
+<?php include 'header.php'; ?>
+
 <!-- FIN HEADER -->
 
 <div class="block-body">
 	<?php
-
 include 'include/pdo/pdo.php';
 
 $idEvenement = $_GET['id'];

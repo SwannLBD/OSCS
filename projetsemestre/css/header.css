@@ -19,6 +19,10 @@ a {
 	color: white;
 }
 
+.block-header .logos {
+	padding-left: 1rem;
+}
+
 .block-header {
 	background:#515050 ;
 	height: 80px;
@@ -102,6 +106,10 @@ a {
 
 
 @media (min-width:768px){  /* Partie tablette */
+
+	.block-header .logos {
+		padding-left: 2rem;
+	}
 
 	.block-header {
 		height: 80px;
@@ -191,6 +199,7 @@ a {
 
 	.block-header .logos {
 		display: flex;
+		padding-left: 2rem;
 	}
 	.block-header .logo {
 		display: flex;
@@ -220,7 +229,7 @@ a {
 	#liste_2 {
 		padding-right: 45px;
 
-	} 
+	}
 
 	.block-header .nom_cache {
 		display: flex;

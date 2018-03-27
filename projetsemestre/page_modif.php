@@ -67,3 +67,17 @@ session_start();
 
 
 </html>
+
+
+Notice
+: Undefined index: id in
+/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
+on line
+32
+
+
+Fatal error
+: Uncaught Error: Call to a member function fetch() on boolean in /Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php:33 Stack trace: #0 {main} thrown in
+/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
+on line
+33

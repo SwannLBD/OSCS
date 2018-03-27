@@ -9,6 +9,7 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page_resultats.css">
 </head>
 
 <body>
@@ -218,7 +219,7 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 
 	//S'il y a un bug
 	} else {
-		echo "Oula... <a href='debutformulaire.php'> Retour au début du questionnaire</a>";
+		echo "Oula... <a href='commencerformulaire.php'> Retour au début du questionnaire</a>";
 	}
 
 
@@ -297,7 +298,7 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 }
 
 	if ($i == 0) {
-		echo "Il n'y a pas de résultats, réessaie en <a href='debutformulaire.php'>cliquant ici</a>";
+		echo "<p>Il n'y a pas de résultats, réessaie en <a href='commencerformulaire.php'>cliquant ici</a></p>";
 	}
 
 ?>

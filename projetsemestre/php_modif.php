@@ -1,22 +1,55 @@
 <?php
 session_start();
-$hashpass=$_POST['password'];
-$hashpass=sha1($hashpass);
-$mail = $_POST['email'];
 
-$connexionStr = new PDO('mysql:host=localhost;dbname=formulaire', 'root', 'root');
-$req = $connexionStr->prepare('UPDATE membres SET nomMembre = '$_POST['lastname']', prenomMembre = '$_POST['firstname']', emailMembre = '$_POST['email']' WHERE id = '$_SESSION['id']'');
-$req->execute();
-$modif = $req->fetch();
+  /*CONNEXION*/
+require 'include/pdo/pdo.php';
 
-if(!$modif) {
-  echo "Impossible de modifier vos informations";
-} else {
 
+
+//On initialise des erreurs
+$errors = [];
+
+
+/*CONDITIONS*/
+//Si le nomUser est vide
+if(empty($_POST['lastname'])) {
+    $errors['lastname'] = "votre nom n'est pas valide";
+}
+
+//Si le prenomUser est vide, possiblité de rajouté des paramètres pour plus de précision
+if(empty($_POST['firstname'])) {
+    $errors['firstname'] = "votre prénom n'est pas valide";
+}
+
+//Si l'adresse mail est vide,  possiblité de rajouté des paramètres pour plus de précision
+if(empty($_POST['email']) ) {
+    $errors['email'] = "Votre email n'est pas valide";
 }
 
 
 
 
+//Si aucune erreur n'et detecté
+if(empty($errors)){
 
- ?>
+  // $hashpass=$_POST['password'];
+  // $hashpass=sha1($hashpass);
+  // $mail = $_POST['email'];
+
+  $stmt = $connexion->prepare("UPDATE membres SET nomMembre =\"" .$_POST['lastname'] . "\", prenomMembre =\"" .$_POST['firstname'] . "\", emailMembre =\"" .$_POST['email'] . "\" WHERE ID_membre =" .$_SESSION['id']);
+  //var_dump($stmt);
+
+  $stmt->execute();
+
+  header('Location: page_resultats.php');
+
+}
+//Si au moins une erreurs est detecté ont affiche les erreurs
+else{
+
+    echo "<pre>";
+    print_r($errors);
+    echo "</pre>";
+}
+
+?>
