@@ -1,0 +1,36 @@
+.fond_page {
+	background: url(../images_site/fond.jpg);
+  color: white;
+  background-attachment: fixed;
+}
+
+.texte {
+  margin: auto;
+  padding: 1rem 6rem 3rem 6rem;
+}
+
+.texte a {
+  text-decoration: none;
+}
+
+.texte a, a:visited {
+    /* Les liens "au repos" et déjà visités antérieurement */
+    color: #ffffff; /* couleur blanche */
+}
+.texte a:hover, a:focus, a:active {
+    /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
+    color: #ff0000;
+}
+
+.texte h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logoft{
+  display: flex;
+}
+
+.logoft a {
+  margin: auto;
+}

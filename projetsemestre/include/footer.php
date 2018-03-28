@@ -1,11 +1,17 @@
 <footer class="block-footer">
 		<div class="info1">
-			<p>Mentions légales</p>
+			<a href="mentionslegales.php">
+				<p>Mentions légales</p>
+			</a>
 		</div>
 		<div class="info2">
-			<p>Politique de confidentialité</p>
+			<a href="politiqueconf.php">
+				<p>Politique de confidentialité</p>
+			</a>
 		</div>
 		<div class="info3">
-			<p>Conditions générales</p>
+			<a href="CDGVU.php">
+				<p>Conditions générales</p>
+			</a>
 		</div>
 </footer>

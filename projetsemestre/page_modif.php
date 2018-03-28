@@ -5,11 +5,14 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/page_modif.css">
 
 </head>
 
 <body class="body_inscription">
+
+	<video autoplay loop poster="images_site/ciel.jpg" id="bgvid">
+    <source src="images_site/ciel.mp4" type="video/mp4">
+  </video>
 
 <?php
 require('include/pdo/pdo.php');
@@ -67,3 +70,17 @@ session_start();
 
 
 </html>
+
+
+Notice
+: Undefined index: id in
+/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
+on line
+32
+
+
+Fatal error
+: Uncaught Error: Call to a member function fetch() on boolean in /Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php:33 Stack trace: #0 {main} thrown in
+/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
+on line
+33

@@ -9,6 +9,9 @@
 
 <body class="page_p_1">
 
+  <video autoplay loop poster="images_site/city.jpg" id="bgvid">
+    <source src="images_site/city.mp4" type="video/mp4">
+  </video>
 
     	<div class="container1">
 			<div class="inner1">
@@ -46,20 +49,9 @@
 				</div>
 			</div>
 		</div>
-		<footer class="block-footer">
-					<div class="info1">
-						<p>Mentions légales</p>
-					</div>
-					<div class="info2">
-						<p>Politique de confidentialité</p>
-					</div>
-					<div class="info3">
-						<p>Conditions générales</p>
-					</div>
-		  </footer>
-
-
-
 
 </body>
+<?php
+include "include/footer.php";
+?>
 </html>
