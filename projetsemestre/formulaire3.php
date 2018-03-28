@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start(); 
 
 ?>
 
@@ -33,7 +33,7 @@
 
     //Si erreur, redirection vers début du formulaire
     } else {
-      echo "Erreur, pour revenir au début du formulaire, <a href='debutformulaire.php'>cliquez-ici</a>";
+      echo "Erreur, pour revenir au début du formulaire, <a href='commencerformulaire.php'>cliquez-ici</a>";
     }
 
   ?>

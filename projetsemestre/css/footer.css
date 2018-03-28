@@ -6,7 +6,7 @@
 	background: white;
 	font-family: 'Segoe UI';
 	font-size: 10px;
-	display: flex;
+	display: flex; 
 }
 
 .block-footer .info1,
@@ -17,6 +17,7 @@
 	display: flex;
 	margin: auto;
 }
+
 
 @media (min-width: 992px) {
 	.block-footer{

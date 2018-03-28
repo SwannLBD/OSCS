@@ -2,7 +2,7 @@
 	session_start();
 ?>
 
-<!doctype html>
+<!doctype html> 
 <html>
 <head>
 <meta charset="UTF-8">
@@ -32,7 +32,7 @@
 
     //Si erreur, redirection vers début du formulaire
     } else {
-      echo "Erreur, pour revenir au début du formulaire, <a href='debutformulaire.php'>cliquez-ici</a>";
+      echo "Erreur, pour revenir au début du formulaire, <a href='commencerformulaire.php'>cliquez-ici</a>";
     }
 
   ?>

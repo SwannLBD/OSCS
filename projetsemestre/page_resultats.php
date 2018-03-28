@@ -9,6 +9,7 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page_resultats.css">
 </head>
 
 <body>
@@ -45,7 +46,6 @@ $prix1 = 15;
 $prix2 = 30;
 
 if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['reponse1'] == 3) {
-
 	//Si l'horaire est avant 19h30
 	if($_SESSION['reponse2'] == 5) {
 
@@ -65,7 +65,6 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 		} else {
 			$query = "SELECT * FROM evenement WHERE idType=:id AND (heureEvenement <= $heure1)";
 		}
-
 
 	//Si l'horaire est entre 19h30 et 20h00
 	} else if ($_SESSION['reponse2'] == 6) {
@@ -128,9 +127,6 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 		}
 
 	}
-
-
-
 
 	//Si la réponse au type de soirée est peu importe
 	} else if ($_SESSION['reponse1'] == 4) {
@@ -214,14 +210,10 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 				$query = "SELECT * FROM evenement";
 			}
 		}
-
-
-
-	//S'il y a un bug
-	} else {
-		echo "Oula... <a href='debutformulaire.php'> Retour au début du questionnaire</a>";
-	}
-
+		//S'il y a un bug
+		} else {
+			echo "Oula... <a href='commencerformulaire.php'> Retour au début du questionnaire</a>";
+		}
 
 	$statementEvenement = $connexion->prepare($query);
 	$statementEvenement -> bindValue(':id', $_SESSION['reponse1']);
@@ -230,8 +222,6 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 	$i = 0;
 	while ($evenement = $statementEvenement -> fetch()) {
 		$i++;
-
-
  ?>
 	<a href="page_descriptif_soiree.php?id=<?php echo $evenement -> idEvenement;?>" class="un_article">
 	<div class="article">
@@ -298,7 +288,7 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 }
 
 	if ($i == 0) {
-		echo "Il n'y a pas de résultats, réessaie en <a href='debutformulaire.php'>cliquant ici</a>";
+		echo "<p>Il n'y a pas de résultats, réessaie en <a href='commencerformulaire.php'>cliquant ici</a></p>";
 	}
 
 ?>

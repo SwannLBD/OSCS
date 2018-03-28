@@ -7,6 +7,8 @@
 @import url('page_inscription.css');
 @import url('page_je_commence.css');
 @import url('page_resultats.css');
+@import url('page_erreur_connexion.css');
+@import url('page_modif.css');
 
 
 body,html {
