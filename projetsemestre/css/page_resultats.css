@@ -4,6 +4,7 @@
 .block-center {
 	background: url(../images_site/fond.jpg);
 	padding-bottom: 10px;
+	background-attachment: fixed;
 
 }
 

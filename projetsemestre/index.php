@@ -9,6 +9,9 @@
 
 <body class="page_p_1">
 
+  <video autoplay loop poster="images_site/city.jpg" id="bgvid">
+    <source src="images_site/city.mp4" type="video/mp4">
+  </video>
 
     	<div class="container1">
 			<div class="inner1">

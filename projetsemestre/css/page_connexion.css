@@ -10,14 +10,23 @@
 	height: 180px ;
 	display: flex;
 	margin: auto;
-} 
+}
 
-.page_p_1{
+/* .page_p_1{
 	background: url(../images_site/ForumDesMétiersLM181117.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 27%;
 	height: 100vh;
+} */
+
+.page_p_1 video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(images_site/city.jpg) no-repeat;
+  background-size: cover;
+	background-size: 80%;
 }
 
 .btn-primary{
@@ -36,6 +45,9 @@
 .lignehorizontale{
 	margin-top: 70px;
 }
+.page_p_1 hr {
+	margin-top: 2rem;
+}
 
 .form-group .form-control {
 	background-color: #CECECE;
@@ -46,7 +58,7 @@
 	border-radius: 100px;
 	margin: auto;
 	display: flex;
-	margin-top: 70px;
+	margin-top: 2rem;
 	border: none;
 	padding: 15px;
 }
@@ -65,7 +77,7 @@
 	border-radius: 100px;
 	margin: auto;
 	display: flex;
-	margin-top: 50px;
+	margin-top: 2rem;
 	border: none;
 	padding: 15px;
 }
@@ -139,6 +151,7 @@
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	display: flex;
 }
 
 .container1{
@@ -156,6 +169,24 @@
 }
 
 /* PARTIE RESPONSIVE */
+
+@media(min-width: 768px){
+
+
+	.container1 .logocl .logo1cl {
+		height: 200px;
+		margin-top: 20px;
+	}
+
+	.inscription .group .pasencoremembre a {
+	margin-top: 10px;
+	}
+
+	.inscription .group .inscrire a {
+		margin-top: 10px;
+	}
+
+}
 
 @media (min-width: 992px){
 

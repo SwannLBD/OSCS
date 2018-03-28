@@ -11,7 +11,7 @@ $req->execute();
 $resultat = $req->fetch();
 
 if (!$resultat) {
-	echo "email ou mdp non valide";
+	header('Location: indexerror.php');
 }else {
 	if (!isset($_SESSION['ID_membre']) AND $_SESSION['ID_membre'] = $resultat['ID_membre'] ) {
 		$_SESSION['id'] = $resultat[0];
@@ -19,7 +19,7 @@ if (!$resultat) {
 		//echo $_SESSION['id'];
 	}
 	else {
-		echo "email ou mdp non valide";
+		header('Location: indexerror.php');
 	}
 }
  ?>

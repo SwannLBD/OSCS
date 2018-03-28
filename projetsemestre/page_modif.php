@@ -5,11 +5,14 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/page_modif.css">
 
 </head>
 
 <body class="body_inscription">
+
+	<video autoplay loop poster="images_site/ciel.jpg" id="bgvid">
+    <source src="images_site/ciel.mp4" type="video/mp4">
+  </video>
 
 <?php
 require('include/pdo/pdo.php');
