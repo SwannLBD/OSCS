@@ -1,4 +1,8 @@
 /*Page de connection*/
+.page_p_1 {
+	min-height: 100%;
+	position: relative;
+}
 
 .logo1cl{
 	height: 250px ;
@@ -10,7 +14,7 @@
 	height: 180px ;
 	display: flex;
 	margin: auto;
-} 
+}
 
 .page_p_1{
 	background: url(../images_site/ForumDesMétiersLM181117.jpeg);

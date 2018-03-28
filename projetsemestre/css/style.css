@@ -9,6 +9,14 @@
 @import url('page_resultats.css');
 
 
+body,html {
+	min-height: 100%;
+}
+
+body {
+	text-align: center;
+}
+
 *{
 	margin:0;
 	padding:0;

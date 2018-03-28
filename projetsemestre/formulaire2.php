@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Où sortir ce soir ?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
 
@@ -39,7 +40,7 @@
 	<div class="container_formulaire">
 		<div class="inner">
 			<div class="logo_formulaire">
-				<a href="http://localhost/Ousortircesoir/projetsemestre/se_connecter.php"><img class="logo1cl" src="images_site/logo.png"> </a>
+				<a href="http://localhost/Ousortircesoir/projetsemestre/se_connecter.php"><img class="logo" src="images_site/logo.png"> </a>
 			</div>
 			<div class="questions">
 				<h1 class="question">#Question 2</h1>

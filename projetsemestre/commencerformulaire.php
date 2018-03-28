@@ -8,7 +8,7 @@
 </head>
 
 <body class="commencer_le_form">
-	<div class="container1">
+	<div class="container_form">
 		<div class="inner1">
 			<div class="logo_commencer">
 				<img src="images_site/logo.png" class="logo_com">

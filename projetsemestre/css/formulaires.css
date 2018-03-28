@@ -1,27 +1,211 @@
 /* Page de formulaire */
 
+/* fond image */
+
 .body_formulaire {
 	background: url(..//images_site/imagefondpage3.jpg);
-	background-repeat: no-repeat;
 	background-size: 350%;
 	background-position: 36%;
 }
 
-.logo_formulaire .logo {
+
+.container_formulaire {
+	display: flex;
+	height: 95vh;
+}
+
+.inner {
+	margin: auto;
+}
+
+/* logo OSCS */
+.inner .logo_formulaire {
+	display: flex;
+	margin-top: 70px;
+}
+
+/* logo OSCS */
+.inner .logo_formulaire a {
+	margin: auto;
+}
+
+/* logo OSCS */
+.inner .logo_formulaire .logo {
 	width: 150px;
+}
+
+/* Questions */
+.container_formulaire .questions {
+	display: flex;
+	margin: 30px auto;
+}
+
+/* Numéro question */
+.container_formulaire .question {
+	color: #00cccb;
+	margin: auto;
+	font-size: 20px;
+}
+
+/* Phrase question */
+.container_formulaire .question-form {
+	color: white;
+	font-size: 18px;
+	margin: 20px;
+}
+
+
+/* Réponses question */
+.container_formulaire .ligne {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 30px auto;
+	padding-left: 30px;
+}
+
+/* Réponses question */
+.container_formulaire .check {
+	width: 50%;
+  text-align: left;
+	margin-bottom: 10px;
+}
+
+/* Réponses question */
+.container_formulaire .form_check_input {
+	width: 15px;
+	height: 15px;
+}
+
+/* Réponses question */
+.container_formulaire label {
+	margin-left: 10px;
+	color: white;
+	font-size: 16px;
+	vertical-align:baseline;
+}
+
+/* Bouton Valider */
+.container_formulaire .btn-connection_p_3{
+	display: flex;
+	font-size: 15px;
+	font-weight: bold;
+	color: #00CCCB;
+	font-family: 'Segoe UI';
+	margin: auto;
+	margin-top: 20px;
+	background: #515050;
+	border-radius:50px;
+	padding: 10px 20px;
+	border: groove;
+	border-color: #00CCCB
+}
+
+/* Bouton Valider hover */
+.container_formulaire .btn-connection_p_3:hover {
+	color: #515050;
+	background: #00cccb;
+	border-color: #515050;
 }
 
 
 /* PARTIE RESPONSIVE */
 
 /* PARTIE TABLETTE*/
-@media(min-width: 768px){
+@media (min-width:768px ) and (max-width:992px){
+
+	/* logo OSCS */
+	.inner .logo_formulaire {
+		display: flex;
+		margin-top: 50px;
+	}
+
+	/* logo OSCS */
+	.logo_formulaire .logo {
+		width: 150px;
+	}
+
+	/* Numéro question */
+	.inner .question {
+		font-size: 30px;
+	}
+
+	/* Questions */
+	.inner .questions {
+		margin: 30px auto;
+	}
+
+	/* Phrase question */
+	.inner .question-form {
+		font-size: 25px;
+		margin: 0;
+	}
+
+	/* Réponses question */
+	.container_formulaire .ligne {
+ 		padding-left: 140px;
+	}
+
+	/* Réponses question */
+	.inner .block-reponse {
+		margin-top: 50px;
+	}
+
+	/* Réponses question */
+	.inner .form_check_input {
+		width: 20px;
+		height: 20px;
+	}
+
+	/* Réponses question */
+	.inner label {
+		font-size: 20px;
+		vertical-align: text-bottom;
+	}
+
+	/* Bouton Valider */
+	.inner .btn-connection_p_3{
+		font-size: 20px;
+		margin-top: 50px;
+		border-radius: 50px;
+		padding: 10px 30px;
+	}
 
 }
 
+@media (min-width: 992px){
 
-@media(min-width: 992px){
+	/* logo OSCS */
+	.inner .logo_formulaire .logo {
+		width: 250px;
+	}
 
+	/* Numéro question */
+	.inner .question {
+		font-size: 35px;
+	}
+
+	/* Phrase question */
+	.inner .question-form {
+		font-size: 30px;
+	}
+
+	/* Réponses question */
+	.container_formulaire .ligne {
+	padding-left: 70px;
+	}
+
+	/* Réponses question */
+	.inner .form_check_input {
+		width: 20px;
+		height: 20px;
+	}
+
+	/* Réponses question */
+	.inner label {
+		font-size: 20px;
+		vertical-align: text-bottom;
+	}
 
 }
 	/* Fin Page Formulaire */
