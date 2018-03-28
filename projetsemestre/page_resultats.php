@@ -16,7 +16,7 @@
 <header>
 
 <?php
-	include 'include/1header.php';
+	include 'header.php';
 	require('include/pdo/pdo.php');
 ?>
 

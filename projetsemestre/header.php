@@ -14,7 +14,6 @@
 
 <body>
 	<?php
-	session_start();
 	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
 	$membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
 	while ($donnees = $membres -> fetch()) {

@@ -1,11 +1,11 @@
 body p, h2 {
-	color: black; 
+	color: black;
 }
 
 /* PAGE RESULTATS */
 
 .resultats {
-		min-height: 100vh;
+		/* min-height: 100vh; */
 }
 
 .block-center {
