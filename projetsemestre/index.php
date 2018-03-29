@@ -52,6 +52,6 @@
 
 </body>
 <?php
-include "include/footer.php";
+include "include/footer_index.php";
 ?>
 </html>

@@ -63,6 +63,8 @@ body p, h2 {
 	background: white;
 	width: 100%;
 	height: 100%;
+	border-radius: 2rem;
+	opacity: .9;
 }
 
 .block-center .presentation,
@@ -79,6 +81,8 @@ body p, h2 {
 	margin: 10px;
 	width: 100px;
 	height: 100px;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .block-center .info {

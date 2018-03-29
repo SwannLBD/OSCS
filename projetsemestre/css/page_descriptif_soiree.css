@@ -24,6 +24,8 @@
 	background: white;
 	margin: 10px auto;
 	width: 99%;
+	border-radius: 2rem;
+	opacity: .9;
 }
 
 .block-body .box_image {
@@ -32,6 +34,8 @@
 
 .block-body .image_soiree {
 	margin: auto;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .block-body .partie_description {
@@ -71,9 +75,22 @@
 	color: black;
 }
 
+.partie_map #map {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
 /* Partie Responsive */
 
 @media (min-width: 992px) {
+
+	.partie_map #map {
+		margin-right: 2rem;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
 	.block-body .soiree {
 			width: 75%;
 	}

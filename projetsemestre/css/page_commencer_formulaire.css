@@ -3,7 +3,8 @@
 .commencer_le_form{
 	background: url(../images_site/Page2BK.png);
 	background-repeat: no-repeat;
-	background-size: 350%;
+	background-size: 270%;
+	background-position: center;
 }
 
 .logo_commencer{

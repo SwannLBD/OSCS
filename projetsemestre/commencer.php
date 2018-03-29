@@ -15,7 +15,7 @@ if (!$resultat) {
 }else {
 	if (!isset($_SESSION['ID_membre']) AND $_SESSION['ID_membre'] = $resultat['ID_membre'] ) {
 		$_SESSION['id'] = $resultat[0];
-		header('Location: commencerformulaire.php');
+		header('Location: commencer_form.php');
 		//echo $_SESSION['id'];
 	}
 	else {
