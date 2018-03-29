@@ -6,6 +6,7 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="body_descriptif">
@@ -30,7 +31,7 @@ while ($evenement = $statementEvenement -> fetch()) {
 
 	?>
 	<div class="fond">
-		<span><?php echo $evenement -> nomEvenement ?></span>
+		 <span ><?php echo $evenement -> nomEvenement ?></span> 
 	</div>
 	<div class="soiree">
 		<div class="partie_description">
