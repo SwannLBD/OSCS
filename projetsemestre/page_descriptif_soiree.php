@@ -31,7 +31,7 @@ while ($evenement = $statementEvenement -> fetch()) {
 
 	?>
 	<div class="fond">
-		 <span ><?php echo $evenement -> nomEvenement ?></span> 
+		 <span ><?php echo $evenement -> nomEvenement ?></span>
 	</div>
 	<div class="soiree">
 		<div class="partie_description">
@@ -81,18 +81,8 @@ while ($evenement = $statementEvenement -> fetch()) {
     	</script>
 		</div>
 	</div>
+<?php } ?>
 </div>
-
-<!-- FOOTER -->
-
-
-<?php
-
-	}
-	include 'include/footer.php'
-?>
-<!-- FIN FOOTER-->
-
 
 </body>
 </html>

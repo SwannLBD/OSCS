@@ -32,12 +32,18 @@ if(empty($_POST['email']) ) {
 //Si aucune erreur n'et detecté
 if(empty($errors)){
 
-  // $hashpass=$_POST['password'];
-  // $hashpass=sha1($hashpass);
-  // $mail = $_POST['email'];
-
+  //Modifications du nom, prénom et adresse mail
   $stmt = $connexion->prepare("UPDATE membres SET nomMembre =\"" .$_POST['lastname'] . "\", prenomMembre =\"" .$_POST['firstname'] . "\", emailMembre =\"" .$_POST['email'] . "\" WHERE ID_membre =" .$_SESSION['id']);
   //var_dump($stmt);
+
+  //Modification du mot de passe avec hashage
+  $hashpass=$_POST['password'];
+  $hashpass=sha1($hashpass);
+
+  $stmt = $connexion->prepare("UPDATE membres SET  passwordMembre='".$hashpass."' WHERE ID_membre =" .$_SESSION['id']);
+
+
+
 
   $stmt->execute();
 

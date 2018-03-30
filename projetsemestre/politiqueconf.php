@@ -115,13 +115,10 @@
 
   <p>[Re: Agent des Normes de Confidentialité]</p>
 
-  <p>[19 rue André le Nôtre , Angers, R, 49000, France]</p>
+  <p>[19 rue André le Nôtre , Angers, 49000, France]</p>
 
   ----
 </div>
 
 </body>
-<?php
-include "include/footer.php";
-?>
 </html>

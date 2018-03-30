@@ -4,6 +4,7 @@
 
 .block-main {
   height: 90vh;
+  overflow-y: hidden;
 }
 
 .body_inscription video#bgvid {

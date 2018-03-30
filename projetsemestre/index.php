@@ -1,5 +1,5 @@
  <!doctype html>
-<html>
+<html class="hello">
 <head>
 <meta charset="UTF-8">
 <title>Où sortir ce soir ?</title>

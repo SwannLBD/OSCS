@@ -69,7 +69,7 @@
 	</div>
 	<?php
 		}
-	$membres->closeCursor();
+	//$membres->closeCursor();
 	?>
 </body>
 </html>

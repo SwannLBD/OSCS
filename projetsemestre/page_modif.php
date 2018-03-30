@@ -52,7 +52,7 @@ require('include/pdo/pdo.php');
 					<input type="email" required name="email" class="form" id="email" placeholder="<?php echo $donnees['emailMembre']; ?>" max-length="40">
 				</p>
 				<p>
-					<input type="password" required name="password" class="form" id="password" placeholder="Votre mot de passe" maxlength="15" >
+					<input type="password" required name="password" class="form" id="password" placeholder="Votre nouveau mot de passe" maxlength="15" >
 				</p>
 				</div>
 				<div class="btn_inscript">

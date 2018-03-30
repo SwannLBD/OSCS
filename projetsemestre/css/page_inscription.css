@@ -1,7 +1,4 @@
-
-
 /* PAGE INSCRIPTION */
-
 
 .body_inscription {
 	background:url(../images_site/fond_page_inscription.jpg);
@@ -9,7 +6,7 @@
 	background-repeat: repeat;
 }
 
-.container_inscription { 
+.container_inscription {
 	margin-top: 180px;
 }
 

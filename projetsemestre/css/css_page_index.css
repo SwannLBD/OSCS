@@ -20,12 +20,11 @@
 color: white;
 }
 
+
 @media (min-width: 992px) {
 	.block-footer_i{
 		font-size: 12px;
 	}
 }
-
-
 
 	/* Fin Footer */
