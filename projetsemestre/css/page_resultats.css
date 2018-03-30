@@ -55,7 +55,7 @@ body p, h2 {
 	display: flex;
 	width: 97%;
 	height: 100%;
-	margin: 5px auto;
+	margin: 10px auto;
 }
 
 /* Un résultat */
@@ -63,6 +63,7 @@ body p, h2 {
 	background: white;
 	width: 100%;
 	height: 100%;
+	border-radius: 2rem;
 }
 
 .block-center .presentation,
@@ -79,6 +80,8 @@ body p, h2 {
 	margin: 10px;
 	width: 100px;
 	height: 100px;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .block-center .info {
@@ -127,8 +130,6 @@ body p, h2 {
 .block-center .infos p {
 	font-size: 12px;
 }
-
-
 
 
 @media (min-width: 768px){

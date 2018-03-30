@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html>
 <head>
@@ -16,7 +19,7 @@
 
 <?php
 require('include/pdo/pdo.php');
-session_start();
+//session_start();
 ?>
 
 <main class="block-main">
@@ -64,23 +67,10 @@ session_start();
 <?php
 	}
 	$membres->closeCursor();
-	include "include/footer.php";
+	include "include/footer_index.php";
+
 ?>
 </body>
 
 
 </html>
-
-
-Notice
-: Undefined index: id in
-/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
-on line
-32
-
-
-Fatal error
-: Uncaught Error: Call to a member function fetch() on boolean in /Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php:33 Stack trace: #0 {main} thrown in
-/Applications/MAMP/htdocs/Ousortircesoir/projetsemestre/page_modif.php
-on line
-33

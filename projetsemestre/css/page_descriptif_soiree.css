@@ -1,11 +1,44 @@
 /* PAGE DESCRIPTIF SOIREE */
 
+/* page */
+
+/* pop-up */
+.body_descriptif .pop-up {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	z-index: 100;
+}
+
+.body_descriptif #overlay{
+ width: 100vw;
+ height: 100vh;
+ position: fixed;
+ z-index:98;
+ background-color: rgba(0,0,0,0.5);
+}
+
+.body_descriptif .body_pop-up {
+	width: 95%;
+	height: 45%;
+	margin: auto;
+	z-index: 99;
+	display: flex;
+	background: #cecece;
+}
+
+/* fin pop-up */
+
+
+
 .block-body {
 	font-family: "Segoe UI";
 	background: url(../images_site/fond.jpg);
 	padding-bottom: 10px;
 }
 
+/* fond */
 .block-body .fond {
 	background: url(../images_site/imagefondpage3.jpg);
 	background-size: cover;
@@ -13,88 +46,309 @@
 	display: flex;
 }
 
+/* fond */
 .block-body span {
 	margin: auto;
 	color: white;
 	font-size: 25px;
 }
 
+/* soirée */
 .block-body .soiree {
 	border: 1px solid black;
 	background: white;
 	margin: 10px auto;
 	width: 99%;
+	border-radius: 2rem;
 }
 
-.block-body .box_image {
-	display: flex;
-}
-
-.block-body .image_soiree {
-	margin: auto;
-}
-
+/* partie description */
 .block-body .partie_description {
-	display: flex;
 	margin: 5px 0;
 }
 
-.block-body .image {
+/* partie informations */
+.block-body .partie_informations {
+	display: flex;
+	font-size: 12px;
+}
+
+/* partie informations contenu */
+.block-body .partie_informations .informations_soiree {
+	text-align: left;
+}
+
+/* partie informations contenu */
+.block-body .partie_informations .informations_soiree p {
+	margin-bottom: 5px;
+}
+
+/* partie informations contenu icone*/
+.block-body .partie_informations .informations_soiree .info {
+	width: 15px;
+	vertical-align:text-top;
+}
+
+/* informations soirée */
+.block-body .informations_soiree {
+	margin: auto;
+}
+
+/* image soirée */
+.block-body .image_soiree {
+	margin: auto;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+/* image soirée */
+.block-body .image_soiree .image {
 	height: 120px;
 }
 
-.block-body .partie_description .description,
-.block-body .partie_description .adresse,
-.block-body .partie_description .etoiles {
-	margin: 5px;
+/* description evenement */
+.block-body .description_evenement {
+	margin: 10px auto;
+	width: 90%;
+}
+/* titre info */
+.block-body .titre_info {
+	display: flex;
 }
 
-.block-body  .soiree .avis {
-	height: 71px;
-	margin: 5px ;
+/* description_evenement contenu */
+.block-body .partie_informations .info_prix,
+.block-body .partie_informations .info_horaire,
+.block-body .partie_informations .info_adresse,
+.block-body .partie_informations .info_duree {
+	margin-left: 20px;
 }
 
-.block-body .avis h3 {
-	margin: 2px 0;
+/* description evenement titre */
+.block-body h3 {
+	font-size: 16px;
+	margin: auto;
+	margin-bottom: 15px;
 }
 
+/* description evenement contenu */
+.block-body .description_evenement p {
+	font-size: 12px;
+	text-align: left;
+}
+
+/* commentaires */
+.block-body .commentaires {
+	margin: 2px auto ;
+	width: 90%;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 12px;
+	background: #cecece;
+}
+
+/* commentaires */
+.block-body .identifiants {
+	width: 25%;
+	border-right: 1px solid black;
+}
+
+/* commentaires */
+.block-body .contenu_commentaire {
+	display: flex;
+	width: 70%;
+}
+
+/* commentaires */
+.block-body .contenu_commentaire p {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	margin-left: 5px;
+	word-wrap: break-word;
+}
+
+/* bouton */
+.block-body #button {
+	margin-top: 10px;
+	padding: 10px;
+	background: #cecece;
+	text-decoration: none;
+	border-style: none;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+/* formulaire */
+.body_pop-up .formulaire {
+	display: block;
+}
+
+/* formulaire */
+.body_pop-up .formulaire .titre_comm,
+.body_pop-up .formulaire .commentaire,
+.body_pop-up .formulaire .bouton_ajout_comm {
+	display: flex;
+}
+
+/* formulaire */
+.body_pop-up .formulaire h3,
+.body_pop-up .formulaire #commentaire,
+.body_pop-up .formulaire #comm {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+/* formulaire */
+.body_pop-up .formulaire .ajout {
+	padding: 10px;
+	background: #a7a7a7;
+	text-decoration: none;
+	border-style: none;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+
+/* textarea */
+.body_pop-up #commentaire {
+	margin: auto;
+	width: 250px;
+  height: 100px;
+  resize: none;
+  color: grey;
+  border-radius: 10px;
+}
+
+
+
+
+/* map evenement */
 .block-body #map {
 	height: 180px;
 }
 
-.block-body p {
-	margin: 0;
-	color: black
-}
-
-.body_descriptif .block-footer p{
-	color: black;
+/* map evenement */
+.partie_map #map {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
 }
 
 /* Partie Responsive */
 
+/* format tablette */
+@media (min-width: 768px) {
+
+	.body_descriptif .body_pop-up {
+		width: 75%;
+		height: 45%;
+	}
+
+	/* image soirée */
+	.block-body .image_soiree {
+		margin-left: 2rem;
+		margin-top: 2rem;
+	}
+
+	/* image soirée */
+	.block-body .image_soiree .image {
+		height: 180px;
+	}
+
+	/* description evenement titre */
+	.block-body h3 {
+		font-size: 20px;
+	}
+
+	/* description_evenement contenu */
+	.block-body .partie_informations .info_prix,
+	.block-body .partie_informations .info_horaire,
+	.block-body .partie_informations .info_adresse,
+	.block-body .partie_informations .info_duree {
+		margin-left: 5px;
+	}
+
+	/* partie informations contenu icone*/
+	.block-body .partie_informations .informations_soiree .info {
+		width: 20px;
+		vertical-align:text-top;
+	}
+
+	/* partie informations */
+	.block-body .partie_informations {
+		font-size: 16px;
+	}
+
+	/* description evenement contenu */
+	.block-body .description_evenement p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	/* commentaires */
+	.block-body .commentaires {
+		margin: 3px auto ;
+		width: 60%;
+		font-size: 16px;
+	}
+
+	/* commentaires */
+	.block-body .identifiants {
+		width: 100px;
+
+}
+
+/* format ordinateur */
 @media (min-width: 992px) {
+
+	.body_descriptif .body_pop-up {
+		width: 30%;
+		height: 45%;
+	}
+
+	/* soirée */
 	.block-body .soiree {
-			width: 75%;
+			width: 65%;
 	}
 
-	.block-body .image {
-		height: 200px;
+	/* image soirée */
+	.block-body .image_soiree {
+		margin-left: 3rem;
+		margin-top: 3rem;
 	}
 
-	.block-body .box_decription_soiree {
-		margin: 10px auto;
+	/* image soirée */
+	.block-body .image_soiree .image {
+		height: 250px;
 	}
 
-	.block-body .partie_description {
-		margin: 5px 0 5px 5px;
+	/* description evenement titre */
+	.block-body h3 {
+		font-size: 20px;
+		margin-bottom: 20px;
 	}
 
-	.block-body  .soiree .avis {
-		margin: 10px;
+	/* partie informations contenu */
+	.block-body .partie_informations .informations_soiree p {
+		margin-bottom: 10px;
 	}
 
+	/* commentaires */
+	.block-body .commentaires {
+		margin: 5px auto ;
+		width: 50%;
+	}
+
+
+		/* map evenement */
 	.block-body #map {
 		height: 400px;
+	}
+
+	/* map evenement */
+	.partie_map #map {
+		margin-right: 2rem;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
 	}
 }

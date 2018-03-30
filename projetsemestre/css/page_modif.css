@@ -3,7 +3,7 @@
 }
 
 .block-main {
-  height: 78vh;
+  height: 90vh;
 }
 
 .body_inscription video#bgvid {
@@ -13,3 +13,6 @@
   background: url(images_site/ciel.jpg) no-repeat;
   background-size: cover;
 }
+ .body_inscription .inner {
+   border-radius: 2rem;
+ }

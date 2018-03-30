@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+<?php	session_start(); ?>
 
 <!doctype html>
 <html>
@@ -9,14 +7,13 @@
 <title>Où sortir ce soir ?</title>
 <link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/page_resultats.css">
 </head>
 
 <body>
 <header>
 
 <?php
-	include 'header.php';
+	include 'include/1header.php';
 	require('include/pdo/pdo.php');
 ?>
 
@@ -244,14 +241,14 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 			<div class="ville_article">
 				<div class="infos">
 
-					<p class="info"> <img class="info" id="adresse" src="images_site/placeholder.svg" alt="icone_placeholder">
+					<p class="info_texte"> <img class="info" id="adresse" src="images_site/placeholder.svg" alt="icone_placeholder">
 						<?php echo $evenement -> villeEvenement ?>
 					</p>
 				</div>
 			</div>
 			<div class="prix_article">
 				<div class="infos">
-					<p class="info"> <img class="info" id="prix" src="images_site/euro.svg" alt="icone_placeholder">
+					<p class="info_texte"> <img class="info" id="prix" src="images_site/euro.svg" alt="icone_placeholder">
 						<?php $prix = $evenement ->prixEvenement;
 						$prix = str_replace('.', ',', $prix);
 						if ($prix == 0) {
@@ -265,7 +262,7 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 			<div class="horaire_article">
 				<div class="infos">
 
-					<p class="info"><img class="info" id="horaire" src="images_site/clock.svg" alt="icone_horaire">
+					<p class="info_texte"><img class="info" id="horaire" src="images_site/clock.svg" alt="icone_horaire">
 						<?php
 						$heure = $evenement -> heureEvenement;
 						list($heures, $minutes) = explode('.', $heure);

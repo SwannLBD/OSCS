@@ -16,14 +16,20 @@
 <header class="block-header">
 <?php
 
-$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+include 'include/pdo/pdo.php';
 
-//$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 
+$query = "SELECT * FROM membres WHERE idMembre=':id'";
+$statement = $connexion->prepare($query);
+$statement -> bindValue(':id', $_SESSION['id']);
+$statement -> execute();
+
+$profil = $statement -> fetch();
+// $membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
+// while ($donnees = $membres -> fetch()) {
 //$membres = $connexionStr->query ("SELECT * FROM membres ");
 
 //while($membre = $membres -> fetch())
-	{
 
 ?>
 		<div class="container">
@@ -45,7 +51,7 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><!--<?php  /*echo $membre['nomMembre'] */ ?>--></p>
+					<p class="nom_prenom"><!--<?php  echo $profil ->nomMembres  ?>--></p>
 					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>
@@ -75,7 +81,8 @@ $connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'roo
 	</menu>
 <?php
 
-	}
+
+	//}
 	// $membre->closeCursor();
 
 ?>
