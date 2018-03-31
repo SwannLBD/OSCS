@@ -1,5 +1,5 @@
 <?php
-	session_start(); 
+	session_start();
 
 ?>
 
@@ -33,7 +33,7 @@
 
     //Si erreur, redirection vers début du formulaire
     } else {
-      echo "Erreur, pour revenir au début du formulaire, <a href='commencerformulaire.php'>cliquez-ici</a>";
+      echo "Erreur, pour revenir au début du formulaire, <a href='commencer_form.php'>cliquez-ici</a>";
     }
 
   ?>
@@ -41,7 +41,7 @@
 	<div class="container_formulaire">
 		<div class="inner">
 			<div class="logo_formulaire">
-				<a href="http://localhost/Ousortircesoir/projetsemestre/se_connecter.php"><img class="logo" src="images_site/logo.png"></a>
+				<a href="commencer_form.php"><img class="logo" src="images_site/logo.png"></a>
 			</div>
 			<div class="questions">
 				<h1 class="question">#Question 3</h1>

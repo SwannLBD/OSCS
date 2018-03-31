@@ -77,12 +77,8 @@
      <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
      <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
      <strong>La seule contrepartie à l'utilisation de ces mentions légales, est l'engagement total à laisser le lien crédit subdelirium sur cette page de mentions légales.</strong><br />
-     Vos mentions légales :
 
    </div>
 
  </body>
- <?php
- include "include/footer.php";
- ?>
  </html>

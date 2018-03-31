@@ -34,7 +34,7 @@ require('include/pdo/pdo.php');
 		</div>
 		<div class="formulaire">
 			<?php
-			$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','root');
+			$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
 			$membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
 			while ($donnees = $membres -> fetch()) {
 			?>
@@ -52,7 +52,7 @@ require('include/pdo/pdo.php');
 					<input type="email" required name="email" class="form" id="email" placeholder="<?php echo $donnees['emailMembre']; ?>" max-length="40">
 				</p>
 				<p>
-					<input type="password" required name="password" class="form" id="password" placeholder="Votre mot de passe" maxlength="15" >
+					<input type="password" required name="password" class="form" id="password" placeholder="Votre nouveau mot de passe" maxlength="15" >
 				</p>
 				</div>
 				<div class="btn_inscript">

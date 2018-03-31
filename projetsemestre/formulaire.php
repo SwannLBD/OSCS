@@ -28,7 +28,17 @@ if(empty($_POST['password'])) {
     $errors['password'] = "Vous devez rentrer un mot de passe valide";
 }
 
-
+// $sql="SELECT membres FROM formulaire WHERE emailMembre='".$_POST['email']."' ";
+// $result=mysql_query($sql);
+// //si la requete ne retourne rien, cela signifie que le mail n'existe pas
+// if(mysql_num_rows($result) != 0)
+// {
+// echo 'Ce mail existe deja';
+// }
+// else
+// {
+// //traitement
+// }
 
 //Si aucune erreur n'et detecté
 if(empty($errors)){
@@ -45,8 +55,7 @@ if(empty($errors)){
   $stmt->bindValue(':passwordMembre', $hashpass /*$_POST['password']*/ );
 	$stmt->execute();
 
-
-	header('Location: commencerformulaire.php');
+	header('Location: commencer_form.php');
 
 }
 //Si au moins une erreurs est detecté ont affiche les erreurs

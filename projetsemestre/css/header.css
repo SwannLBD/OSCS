@@ -19,6 +19,12 @@ a {
 	color: white;
 }
 
+#liste_2 {
+	padding-right: 45px;
+	z-index: 1;
+
+}
+
 .block-header .logos {
 	padding-left: 1rem;
 }
@@ -228,6 +234,7 @@ a {
 
 	#liste_2 {
 		padding-right: 45px;
+		z-index: 1;
 
 	}
 

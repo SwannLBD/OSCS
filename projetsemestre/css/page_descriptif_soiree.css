@@ -234,6 +234,12 @@
 	margin-bottom: 2rem;
 }
 
+.partie_map #map {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
 /* Partie Responsive */
 
 /* format tablette */
