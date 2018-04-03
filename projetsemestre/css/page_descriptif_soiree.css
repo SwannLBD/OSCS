@@ -120,8 +120,13 @@
 .block-body .partie_informations .info_prix,
 .block-body .partie_informations .info_horaire,
 .block-body .partie_informations .info_adresse,
-.block-body .partie_informations .info_duree {
+.block-body .partie_informations .info_duree,
+.block-body .partie_informations .info_date {
 	margin-left: 20px;
+}
+
+.block-body .partie_informations #date {
+	margin-right: 5px;
 }
 
 /* description evenement titre */
@@ -171,7 +176,7 @@
 
 /* bouton */
 .block-body #button {
-	margin-top: 10px;
+	margin: 10px 0;
 	padding: 10px;
 	background: #cecece;
 	text-decoration: none;
@@ -216,6 +221,7 @@
   height: 100px;
   resize: none;
   color: grey;
+	padding: 5px;
   border-radius: 10px;
 }
 
@@ -270,7 +276,8 @@
 	.block-body .partie_informations .info_prix,
 	.block-body .partie_informations .info_horaire,
 	.block-body .partie_informations .info_adresse,
-	.block-body .partie_informations .info_duree {
+	.block-body .partie_informations .info_duree,
+	.block-body .partie_informations .info_date {
 		margin-left: 5px;
 	}
 

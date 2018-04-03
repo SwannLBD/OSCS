@@ -13,11 +13,9 @@ $resultat = $req->fetch();
 if (!$resultat) {
 	header('Location: indexerror.php');
 }else {
-	if (isset($_SESSION['id'])
-	// AND $_SESSION['idMembre'] = $resultat -> idMembre
-		) {
-		$_SESSION['id'] = $resultat -> idMembre;
-		header('Location: commencerformulaire.php');
+	if (!isset($_SESSION['idMembre']) AND $_SESSION['idMembre'] = $resultat['idMembre'] ) {
+		$_SESSION['idMembre'] = $resultat[0];
+		header('Location: commencer_form.php');
 		//echo $_SESSION['id'];
 	}
 	else {

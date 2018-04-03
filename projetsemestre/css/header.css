@@ -171,6 +171,7 @@ a {
 	}
 
 	.block-header .user {
+		margin-left: 5px;
 		height: 30px;
 		vertical-align: baseline;
 	}
@@ -239,11 +240,11 @@ a {
 	}
 
 	.block-header .nom_cache {
-		display: flex;
 		margin-right: 20px;
 	}
 
 	.block-header .nom_prenom {
+		display: flex;
 		font-size: 16px;
 		color: white;
 		margin-right: 7px;

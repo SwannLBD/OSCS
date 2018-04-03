@@ -11,19 +11,31 @@
 <body>
   <?php include 'include/pdo/pdo.php';
   $evenement = $_GET['id'];
-  ?>
+  $membre  = $_SESSION['idMembre'];
 
-<p class="merciAvis"> Merci votre avis à bien était pris en compte</p>
-
-    <?php
-    $stmt = $connexion -> prepare('INSERT INTO commentaires (commentaire, idEvenement, idMembre) VALUES (:commentaire, :idEvenement, :idMembre)');
-    $stmt->bindValue(':commentaire', $_POST['commentaire']);
-    $stmt->bindValue(':idEvenement', $evenement);
-    $stmt->bindValue(':idMembre', $membres -> idMembre);
-    echo '<br />';
-    $stmt->execute();
-
+  $stmt = $connexion -> prepare('INSERT INTO commentaires (commentaire, idEvenement, idMembre) VALUES (:commentaire, :idEvenement, :idMembre)');
+  $stmt->bindValue(':commentaire', $_POST['commentaire']);
+  $stmt->bindValue(':idEvenement', $evenement);
+  $stmt->bindValue(':idMembre', $membre);
+  $stmt->execute();
 ?>
 
+<div class="body_ajout">
+  <header>
+    <?php include 'include/header.php'; ?>
+  </header>
+  <div class="main_ajout">
+    <div class="center_ajout">
+      <div class="comment">
+        <p> Merci, votre commentaire a bien été pris en compte ! </p>
+      </div>
+      <div class="revenir">
+        <a href="page_descriptif_soiree.php?id=<?php echo $evenement; ?>"><button class="button_back"> Revenir à mes choix de soirées </button></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<?php include 'include/footer.php';?>
 </body>
 </html>

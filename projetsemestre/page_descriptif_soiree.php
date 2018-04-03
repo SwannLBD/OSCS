@@ -22,13 +22,18 @@
 						<h3>Votre commentaire :</h3>
 					</div>
 					<div class="commentaire">
-          	<textarea id="commentaire" name="commentaire" type="text"></textarea>
+          	<textarea id="commentaire" required name="commentaire" type="text"></textarea>
 					</div>
-					<!-- <label for="pseudo">Votre pseudo :</label>
-            <input type="text" name="membre" id="membre" placeholder="ton nom" /> -->
 					<div class="bouton_ajout_comm">
 						<input id="comm" class="ajout" type="submit" value="Ajoutez votre commentaire" />
 					</div>
+					<?php
+					if(!empty ($_POST['commentaire'])){
+						header ('Refresh:0');
+					}
+					else {
+					}
+					?>
 				</form>
 				</div>
 			</div>
@@ -36,7 +41,7 @@
 	</div>
 
 <!-- HEADER -->
-<?php include 'include/1header.php'; ?>
+<?php include 'include/header.php'; ?>
 
 <!-- FIN HEADER -->
 
@@ -72,6 +77,14 @@ while ($evenement = $statementEvenement -> fetch()) {
 						<div class="titre_info">
 							<h3>Informations :</h3>
 						</div>
+						<?php if ($evenement -> dateEvenement !=0000-00-00){
+							echo ('<p class="info_date">');
+							echo ('<img class="info" id="date" src="images_site/calendar.svg" alt="icone_calendar">');
+							$date = new DateTime($evenement -> dateEvenement);
+							echo $date -> format('d-m-Y');
+							echo ('</p>');
+						}
+						?>
 						<p class="info_prix"><img class="info" id="prix" src="images_site/euro.svg" alt="icone_placeholder">
 							<?php $prix = $evenement ->prixEvenement;
 							$prix = str_replace('.', ',', $prix);
@@ -121,7 +134,7 @@ while ($evenement = $statementEvenement -> fetch()) {
 			<!-- partie description -->
 			<div class="description_evenement">
 				<div class="titre_info">
-					<h3>Description évènement :</h3>
+					<h3>Description évènement </h3>
 				</div>
 				<p><?php echo $evenement -> descriptionEvenement ?></p>
 			</div>
@@ -174,6 +187,7 @@ while ($evenement = $statementEvenement -> fetch()) {
 
 			<!-- partie map -->
 			<div class="partie_map">
+			<h3>Map de l'évènement</h3>
 			<div id="map"></div>
     		<script>
       		function initMap() {

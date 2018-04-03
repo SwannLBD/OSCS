@@ -14,10 +14,11 @@
 
 <body>
 	<?php
-	var_dump($_SESSION);
+
 	$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
-	$membres = $connexionStr->query("SELECT * FROM membres WHERE idMembre=" . $_SESSION['id']);
+	$membres = $connexionStr->query("SELECT * FROM membres WHERE idMembre=" . $_SESSION['idMembre']);
 	while ($donnees = $membres -> fetch()) {
+
 	?>
 <div class="block-header">
 		<div class="container">
@@ -39,8 +40,8 @@
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><?php echo $donnees -> nomMembre ; ?> <?php echo $donnees -> prenomMembre; ?> </p> <!-- deux balises php pour mettre un espace entre le nom et prénom -->
-					<img class="user" src="images_site/user.svg" alt="user" >
+					<p class="nom_prenom"><?php echo $donnees['nomMembre'] ; ?> <?php echo $donnees['prenomMembre']; ?> <img class="user" src="images_site/user.svg" alt="user" ></p> <!-- deux balises php pour mettre un espace entre le nom et prénom -->
+
 				</div>
 			</div>
 			</div>
@@ -53,7 +54,7 @@
 			<ul id="liste">
 				<li class="list" ><a href="commencerformulaire.php">Chercher sa soirée</a></li>
 				<hr class="trait" width="100%" align ="center">
-					<ul class="list"><?php echo $donnees -> nomMembre ; ?> <?php echo $donnees -> prenomMembre; ?></p> <img class="user" src="images_site/user.svg" alt="user">
+					<ul class="list"><?php echo $donnees['nomMembre'] ; ?> <?php echo $donnees['prenomMembre']; ?></p> <img class="user" src="images_site/user.svg" alt="user">
 						<li class="list"> <a href="page_modif.php">Mon compte</a></li>
 						<li class="list"> <a href="deco.php">Se déconnecter</a></li>
 					</ul>

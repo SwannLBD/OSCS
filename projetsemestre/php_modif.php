@@ -33,14 +33,17 @@ if(empty($_POST['email']) ) {
 if(empty($errors)){
 
   //Modifications du nom, prénom et adresse mail
-  $stmt = $connexion->prepare("UPDATE membres SET nomMembre =\"" .$_POST['lastname'] . "\", prenomMembre =\"" .$_POST['firstname'] . "\", emailMembre =\"" .$_POST['email'] . "\" WHERE ID_membre =" .$_SESSION['id']);
+  $query = ("UPDATE membres SET nomMembre =\"" .$_POST['lastname'] . "\", prenomMembre =\"" .$_POST['firstname'] . "\", emailMembre =\"" .$_POST['email'] . "\" WHERE idMembre =" .$_SESSION['idMembre']);
+  $stmt = $connexion->prepare($query);
+  $stmt->execute();
+
   //var_dump($stmt);
 
   //Modification du mot de passe avec hashage
   $hashpass=$_POST['password'];
   $hashpass=sha1($hashpass);
 
-  $stmt = $connexion->prepare("UPDATE membres SET  passwordMembre='".$hashpass."' WHERE ID_membre =" .$_SESSION['id']);
+  $stmt = $connexion->prepare("UPDATE membres SET  passwordMembre='".$hashpass."' WHERE idMembre =" .$_SESSION['idMembre']);
 
 
 
@@ -48,6 +51,7 @@ if(empty($errors)){
   $stmt->execute();
 
   header('Location: page_resultats.php');
+
 
 }
 //Si au moins une erreurs est detecté ont affiche les erreurs

@@ -11,25 +11,15 @@
 
 <body>
 <header>
-
 <?php
-	include 'include/1header.php';
 	require('include/pdo/pdo.php');
+	include 'include/header.php';
 ?>
-
 </header>
 	<div class="block-center">
 		<div class="fond">
 			<a class="choose"><span>Choisis ta soirée</span></a>
 		</div>
-		<div class="affiche_resultats">
-			<div class="nb-resultats">
-				<!-- <h1> 8 résultats </h1> -->
-			</div>
-			<div class="resultats">
-		</div>
-	</div>
-
 <?php
 
 //On récupère la réponse de la question précédente
@@ -212,9 +202,21 @@ if ($_SESSION['reponse1'] == 1 || $_SESSION['reponse1'] == 2 || $_SESSION['repon
 			echo "Oula... <a href='commencerformulaire.php'> Retour au début du questionnaire</a>";
 		}
 
+
+
 	$statementEvenement = $connexion->prepare($query);
 	$statementEvenement -> bindValue(':id', $_SESSION['reponse1']);
 	$statementEvenement -> execute();
+
+	//S'il y a au moins un résultat : affichage du nombre de résultat(s)
+if ($statementEvenement -> rowCount() > 0) {
+echo "<div class='results'>Il y a ".$statementEvenement -> rowCount();
+	if ($statementEvenement -> rowCount() > 1) {
+			echo " résultats : </div>";
+	} else {
+			echo " résultat : </div>";
+	}
+}
 
 	$i = 0;
 	while ($evenement = $statementEvenement -> fetch()) {

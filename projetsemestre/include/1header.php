@@ -18,19 +18,20 @@
 
 include 'include/pdo/pdo.php';
 
-
-$query = "SELECT * FROM membres WHERE idMembre=':id'";
-$statement = $connexion->prepare($query);
-$statement -> bindValue(':id', $_SESSION['id']);
-$statement -> execute();
-
-$profil = $statement -> fetch();
 // $membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
 // while ($donnees = $membres -> fetch()) {
 //$membres = $connexionStr->query ("SELECT * FROM membres ");
 
 //while($membre = $membres -> fetch())
 
+$query = "SELECT * FROM membres WHERE idMembre=':id'";
+$statementMembre = $connexion->prepare($query);
+$statementMembre->bindValue(':id', $_SESSION['idMembre']);
+$statementMembre->execute();
+
+$user = $statementMembre->fetch();
+var_dump($user);
+echo $user -> idMembre;
 ?>
 		<div class="container">
 		<div class="inner">
@@ -51,7 +52,7 @@ $profil = $statement -> fetch();
 			<div class="nav-item">
 			<div class="menu_cache" onclick="cacher('liste_2');">
 				<div class="nom_cache">
-					<p class="nom_prenom"><!--<?php  echo $profil ->nomMembres  ?>--></p>
+					<p class="nom_prenom">  <?php  echo $user -> nomMembre ; ?> </p>
 					<img class="user" src="images_site/user.svg" alt="user" >
 				</div>
 			</div>
@@ -65,7 +66,7 @@ $profil = $statement -> fetch();
 			<ul id="liste">
 				<li class="list" ><a href="commencerformulaire.php">Chercher sa soirée</a></li>
 				<hr class="trait" width="100%" align ="center">
-					<ul class="list">Alexandre Pouivet <img class="user" src="images_site/user.svg" alt="user">
+					<ul class="list"> <img class="user" src="images_site/user.svg" alt="user">
 						<li class="list"> <a href="page_modif.php">Mon compte</a></li>
 						<li class="list"> <a href="deco.php">Se déconnecter</a></li>
 					</ul>
@@ -73,6 +74,7 @@ $profil = $statement -> fetch();
 		</div>
 		<!-- Menu déroulant caché -->
 		<ul id="liste_2">
+			<p>  <?php  echo $user -> nomMembre ;  ?> </p>
 			<li class="list_2">Mon compte</li>
 			<li class="list_2"><a href="deco.php">Se déconnecter</a></li>
 		</ul>
@@ -82,8 +84,7 @@ $profil = $statement -> fetch();
 <?php
 
 
-	//}
-	// $membre->closeCursor();
+	 //$membre->closeCursor();
 
 ?>
 	</header>

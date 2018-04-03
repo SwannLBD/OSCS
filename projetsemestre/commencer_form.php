@@ -1,8 +1,11 @@
+<?php session_start() ?>
+
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>html</title>
+<title>Où sortir ce soir ?</title>
+<link rel="icon" href="images_site/icone.png">
 <link rel="stylesheet" href="css/comm_form.css">
 
 <body class="commencer_form">

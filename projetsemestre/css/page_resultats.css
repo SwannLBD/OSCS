@@ -42,6 +42,13 @@ body p, h2 {
 	text-decoration: none;
 }
 
+
+.block-center .results {
+	color: white;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
 .block-center span {
 	margin: auto;
 }

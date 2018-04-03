@@ -1,4 +1,5 @@
 <?php
+session_start();
 	/*CONNEXION*/
 require 'include/pdo/pdo.php';
 
@@ -55,7 +56,16 @@ if(empty($errors)){
   $stmt->bindValue(':passwordMembre', $hashpass /*$_POST['password']*/ );
 	$stmt->execute();
 
-	header('Location: commencer_form.php');
+  $connexionStr = new PDO('mysql:host=localhost;dbname=formulaire', 'root', '');
+  //echo ('Query = ' . 'SELECT ID_membre FROM membres WHERE emailMembre="' .$mail.'" AND passwordMembre="'.$hashpass.'"');
+  $req = $connexionStr->prepare('SELECT idMembre FROM membres WHERE emailMembre="' .$mail.'" AND passwordMembre="'.$hashpass.'"');
+  $req->execute();
+  $resultat = $req->fetch();
+
+  if (!isset($_SESSION['idMembre']) AND $_SESSION['idMembre'] = $resultat['idMembre'] ) {
+		$_SESSION['idMembre'] = $resultat[0];
+      header('Location: commencer_form.php');
+    }
 
 }
 //Si au moins une erreurs est detecté ont affiche les erreurs

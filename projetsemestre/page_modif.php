@@ -35,7 +35,7 @@ require('include/pdo/pdo.php');
 		<div class="formulaire">
 			<?php
 			$connexionStr=new PDO("mysql:host=localhost;dbname=formulaire;charset=utf8",'root','');
-			$membres = $connexionStr->query("SELECT * FROM membres WHERE ID_membre=" . $_SESSION['id']);
+			$membres = $connexionStr->query("SELECT * FROM membres WHERE idMembre=" . $_SESSION['idMembre']);
 			while ($donnees = $membres -> fetch()) {
 			?>
 			<form action="php_modif.php" id="form" method="post">    <!-- method "post"(+sure) ou "get"(-sure) -->
